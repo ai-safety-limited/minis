@@ -1,7 +1,7 @@
 import pybullet as p, os, sys, numpy as np, time
 
 print("***************** Please test FPS with p.DIRECT! **********************")
-N,STEPS,PROFILE,INTERFACE = 2,1000,False,p.DIRECT 
+N,STEPS,PROFILE,INTERFACE = 2,1000,True,p.DIRECT 
 # N,STEPS,PROFILE,INTERFACE = 2,1000,True,p.DIRECT
 # N,STEPS,PROFILE,INTERFACE = 2,1000,False,p.DIRECT
 
@@ -40,14 +40,14 @@ for x in range(-N, N):
 
 
 
-if PROFILE: logId=p.startStateLogging(p.STATE_LOGGING_PROFILE_TIMINGS, "stepTimings")
 
 #step the simulation for STEPS steps
 time_start = time.time()
 for i in range(STEPS):
+    if PROFILE and i == 30: logId=p.startStateLogging(p.STATE_LOGGING_PROFILE_TIMINGS, "stepTimings")
     p.stepSimulation()
+    if PROFILE and i == 40: p.stopStateLogging(logId)
 
 time_end = time.time()
 
 print("FPS TOTAL = ", 4*N*N*STEPS / (time_end - time_start), "STEP = ", (time_end - time_start) * 1000 / STEPS, "ms")
-if PROFILE: p.stopStateLogging(logId)
