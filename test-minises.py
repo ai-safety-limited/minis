@@ -1,7 +1,7 @@
 import pybullet as p, os, sys, numpy as np, time
 
 print("***************** Please test FPS with p.DIRECT! **********************")
-N,STEPS,PROFILE,INTERFACE = 2,1000,False,p.GUI 
+N,STEPS,PROFILE,INTERFACE = 2,1000,False,p.DIRECT 
 # N,STEPS,PROFILE,INTERFACE = 2,1000,True,p.DIRECT
 # N,STEPS,PROFILE,INTERFACE = 2,1000,False,p.DIRECT
 
@@ -10,11 +10,11 @@ p.setAdditionalSearchPath("data")
 
 #set physics parameters
 p.setGravity(0,0,-9.8)
-p.setTimeStep(0.033)
 
 # NOTE: 
 # with fewer than numSolverIterations=32, numSubSteps=4
 # some of the minis-es will fall -> physics is broken
+p.setTimeStep(0.033)
 p.setPhysicsEngineParameter(numSolverIterations=32, numSubSteps=4)
 p.setPhysicsEngineParameter(enableConeFriction=0)
 
