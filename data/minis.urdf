@@ -1,0 +1,2939 @@
+<?xml version='1.0'?>
+<robot name="quadruped">
+    <material name="aluminum"><color rgba="0.8 0.8 0.8 1"/></material>
+    <material name="cardboard"><color rgba="0.68 0.5 0.3 1"/></material>
+    <material name="plastic"><color rgba="0.1 0.1 0.1 1"/></material>
+
+
+    
+
+    <link name='chassis_center_link'>
+      
+      <inertial>
+        <origin rpy="0 0 0" xyz="-0.000695 0.064163 -0.000001"/>
+	    <mass value="0.098"/>
+        <inertia ixx="2.691617e-04" ixy="4.933337e-07" ixz="4.291884e-08" iyy="2.166337e-04" iyz="-7.861271e-09" izz="1.356629e-04"/>
+      </inertial>
+      
+
+      
+	      
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.020748 0.050843 0.000000"/>
+	        <geometry><box size="0.001500 0.121124 0.140800"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.010748 0.090805 -0.071171"/>
+	        <geometry><box size="0.021582 0.041282 0.001541"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.013248 0.107384 -0.029229"/>
+	        <geometry><box size="0.016582 0.008041 0.001541"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.013248 0.107384 0.029229"/>
+	        <geometry><box size="0.016582 0.008041 0.001541"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.010748 0.090805 0.071171"/>
+	        <geometry><box size="0.021582 0.041282 0.001541"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="-0.015491 0.107135 0.029229"/>
+	        <geometry><box size="0.016646 0.008309 0.001541"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="-0.015491 0.107135 -0.029229"/>
+	        <geometry><box size="0.016646 0.008309 0.001541"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="-0.012642 0.090540 0.071171"/>
+	        <geometry><box size="0.022344 0.041507 0.001541"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="-0.012642 0.090540 -0.071171"/>
+	        <geometry><box size="0.022344 0.041507 0.001541"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="-0.021884 0.050443 0.000000"/>
+	        <geometry><box size="0.003776 0.121130 0.140800"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	  
+	
+        
+       
+        <collision name='collision'>
+          <origin rpy="0 0 0" xyz="0.020748 0.050843 0.000000"/>
+          <laser_retro>0</laser_retro>
+          <max_contacts>4</max_contacts>
+          <geometry><box size="0.001500 0.121124 0.140800"/></geometry>
+        </collision>
+        
+        <collision name='collision'>
+          <origin rpy="0 0 0" xyz="0.010748 0.090805 -0.071171"/>
+          <laser_retro>0</laser_retro>
+          <max_contacts>4</max_contacts>
+          <geometry><box size="0.021582 0.041282 0.001541"/></geometry>
+        </collision>
+        
+        <collision name='collision'>
+          <origin rpy="0 0 0" xyz="0.013248 0.107384 -0.029229"/>
+          <laser_retro>0</laser_retro>
+          <max_contacts>4</max_contacts>
+          <geometry><box size="0.016582 0.008041 0.001541"/></geometry>
+        </collision>
+        
+        <collision name='collision'>
+          <origin rpy="0 0 0" xyz="0.013248 0.107384 0.029229"/>
+          <laser_retro>0</laser_retro>
+          <max_contacts>4</max_contacts>
+          <geometry><box size="0.016582 0.008041 0.001541"/></geometry>
+        </collision>
+        
+        <collision name='collision'>
+          <origin rpy="0 0 0" xyz="0.010748 0.090805 0.071171"/>
+          <laser_retro>0</laser_retro>
+          <max_contacts>4</max_contacts>
+          <geometry><box size="0.021582 0.041282 0.001541"/></geometry>
+        </collision>
+        
+        <collision name='collision'>
+          <origin rpy="0 0 0" xyz="-0.015491 0.107135 0.029229"/>
+          <laser_retro>0</laser_retro>
+          <max_contacts>4</max_contacts>
+          <geometry><box size="0.016646 0.008309 0.001541"/></geometry>
+        </collision>
+        
+        <collision name='collision'>
+          <origin rpy="0 0 0" xyz="-0.015491 0.107135 -0.029229"/>
+          <laser_retro>0</laser_retro>
+          <max_contacts>4</max_contacts>
+          <geometry><box size="0.016646 0.008309 0.001541"/></geometry>
+        </collision>
+        
+        <collision name='collision'>
+          <origin rpy="0 0 0" xyz="-0.012642 0.090540 0.071171"/>
+          <laser_retro>0</laser_retro>
+          <max_contacts>4</max_contacts>
+          <geometry><box size="0.022344 0.041507 0.001541"/></geometry>
+        </collision>
+        
+        <collision name='collision'>
+          <origin rpy="0 0 0" xyz="-0.012642 0.090540 -0.071171"/>
+          <laser_retro>0</laser_retro>
+          <max_contacts>4</max_contacts>
+          <geometry><box size="0.022344 0.041507 0.001541"/></geometry>
+        </collision>
+        
+        <collision name='collision'>
+          <origin rpy="0 0 0" xyz="-0.021884 0.050443 0.000000"/>
+          <laser_retro>0</laser_retro>
+          <max_contacts>4</max_contacts>
+          <geometry><box size="0.003776 0.121130 0.140800"/></geometry>
+        </collision>
+        
+      
+
+      
+    </link>
+    
+    
+
+    <link name='battery_link'>
+      
+      <inertial>
+        <origin rpy="0 0 0" xyz="0.032819 0.023000 0.019000"/>
+	    <mass value="0.210"/>
+        <inertia ixx="6.117623e-05" ixy="-3.585922e-12" ixz="-1.051232e-11" iyy="1.000286e-04" iyz="-6.929746e-12" izz="1.129124e-04"/>
+      </inertial>
+      
+
+      
+	      
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.034536 0.023000 0.019000"/>
+	        <geometry><box size="0.069401 0.046000 0.040472"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	  
+	
+      
+
+      
+    </link>
+    
+    
+    
+
+    <link name='head0_center_link'>
+      
+      <inertial>
+        <origin rpy="0 0 0" xyz="-0.000000 0.000009 0.007180"/>
+	    <mass value="0.008"/>
+        <inertia ixx="8.357953e-07" ixy="9.718290e-17" ixz="8.605056e-09" iyy="2.960480e-06" iyz="-1.207186e-09" izz="2.685580e-06"/>
+      </inertial>
+      
+
+      
+	      
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.000709"/>
+	        <geometry><box size="0.043365 0.020000 0.001582"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="-0.020850 0.000000 0.014099"/>
+	        <geometry><box size="0.001500 0.020395 0.025198"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.020850 0.000000 0.014099"/>
+	        <geometry><box size="0.001500 0.020395 0.025198"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	  
+	
+      
+
+      
+    </link>
+    
+    
+
+    <link name='head1_center_link'>
+      
+      <inertial>
+        <origin rpy="0 0 0" xyz="-0.000000 -0.000000 0.001294"/>
+	    <mass value="0.002"/>
+        <inertia ixx="5.043949e-08" ixy="-3.062436e-14" ixz="-2.642094e-13" iyy="5.043971e-08" iyz="-1.711337e-16" izz="9.700972e-08"/>
+      </inertial>
+      
+
+      
+	      
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.002250"/>
+	        <geometry><box size="0.021648 0.021648 0.004500"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.000250"/>
+	        <geometry><box size="0.006494 0.006494 0.000500"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	  
+	
+      
+
+      
+    </link>
+    
+    
+
+    <link name='head2_center_link'>
+      
+      <inertial>
+        <origin rpy="0 0 0" xyz="0.000000 -0.009915 -0.018079"/>
+	    <mass value="0.058"/>
+        <inertia ixx="1.558414e-05" ixy="-1.729493e-10" ixz="-1.901327e-10" iyy="9.788826e-06" iyz="1.820135e-08" izz="9.495020e-06"/>
+      </inertial>
+      
+
+      
+	      
+	       <visual>
+        	<origin rpy="0 0 0" xyz="-0.000000 -0.010100 -0.017500"/>
+	        <geometry><box size="0.020132 0.040332 0.037000"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 -0.010100 0.001983"/>
+	        <geometry><box size="0.019818 0.040018 0.004034"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.004500"/>
+	        <geometry><box size="0.005412 0.005412 0.001000"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 -0.010100 -0.039771"/>
+	        <geometry><box size="0.019920 0.040120 0.007658"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	  
+	
+      
+
+      
+    </link>
+    
+    
+
+    <link name='cam0_center_link'>
+      
+      <inertial>
+        <origin rpy="0 0 0" xyz="0.000002 0.009285 0.015049"/>
+	    <mass value="0.018"/>
+        <inertia ixx="1.864125e-06" ixy="7.858595e-11" ixz="-2.642526e-10" iyy="3.262842e-06" iyz="9.471758e-09" izz="2.668717e-06"/>
+      </inertial>
+      
+
+      
+	      
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 0.010393 0.015000"/>
+	        <geometry><box size="0.040659 0.031214 0.030049"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	  
+	
+      
+
+      
+    </link>
+    
+    
+    
+
+    <link name='aiy0_center_link'>
+      
+      <inertial>
+        <origin rpy="0 0 0" xyz="-0.000000 0.040452 0.000008"/>
+	    <mass value="0.050"/>
+        <inertia ixx="3.592418e-05" ixy="2.874626e-13" ixz="7.949236e-14" iyy="3.508779e-05" iyz="2.299236e-09" izz="5.357935e-05"/>
+      </inertial>
+      
+
+      
+	      
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 0.040000 0.000000"/>
+	        <geometry><box size="0.080330 0.080330 0.046330"/></geometry>
+	        <material name="cardboard"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 0.082435 0.000000"/>
+	        <geometry><box size="0.030307 0.009130 0.030307"/></geometry>
+	        <material name="cardboard"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 0.050000 -0.022500"/>
+	        <geometry><box size="0.003903 0.003903 0.001000"/></geometry>
+	        <material name="cardboard"/>
+	       </visual>
+          
+	  
+	
+      
+
+      
+    </link>
+    
+    
+    
+    
+    
+    
+
+    <link name='leg0_left_link'>
+      
+      <inertial>
+        <origin rpy="0 0 0" xyz="0.000000 -0.009915 -0.018079"/>
+	    <mass value="0.058"/>
+        <inertia ixx="1.558414e-05" ixy="-1.729493e-10" ixz="-1.901327e-10" iyy="9.788826e-06" iyz="1.820135e-08" izz="9.495020e-06"/>
+      </inertial>
+      
+
+      
+	      
+	       <visual>
+        	<origin rpy="0 0 0" xyz="-0.000000 -0.010100 -0.017500"/>
+	        <geometry><box size="0.020132 0.040332 0.037000"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 -0.010100 0.001983"/>
+	        <geometry><box size="0.019818 0.040018 0.004034"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.004500"/>
+	        <geometry><box size="0.005412 0.005412 0.001000"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 -0.010100 -0.039771"/>
+	        <geometry><box size="0.019920 0.040120 0.007658"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	  
+	
+      
+
+      
+    </link>
+    
+    
+
+    <link name='leg1_left_link'>
+      
+      <inertial>
+        <origin rpy="0 0 0" xyz="0.000192 0.010581 -0.016353"/>
+	    <mass value="0.012"/>
+        <inertia ixx="7.129164e-06" ixy="-1.083228e-08" ixz="-4.791487e-09" iyy="6.357833e-06" iyz="4.792567e-08" izz="1.558394e-06"/>
+      </inertial>
+      
+
+      
+	      
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000285 0.021262 -0.016756"/>
+	        <geometry><box size="0.020046 0.001565 0.043221"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	  
+	
+      
+
+      
+    </link>
+    
+    
+
+    <link name='leg2_left_link'>
+      
+      <inertial>
+        <origin rpy="0 0 0" xyz="-0.000036 -0.000072 0.002238"/>
+	    <mass value="0.009"/>
+        <inertia ixx="1.294746e-06" ixy="1.679879e-09" ixz="1.077743e-10" iyy="2.234025e-06" iyz="5.007505e-09" izz="3.396097e-06"/>
+      </inertial>
+      
+
+      
+	      
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.000709"/>
+	        <geometry><box size="0.043365 0.040000 0.001582"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="-0.020850 0.000000 0.006099"/>
+	        <geometry><box size="0.001504 0.040395 0.009198"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.020850 0.000000 0.006099"/>
+	        <geometry><box size="0.001504 0.040395 0.009198"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	  
+	
+      
+
+      
+    </link>
+    
+    
+
+    <link name='leg3_left_link'>
+      
+      <inertial>
+        <origin rpy="0 0 0" xyz="0.000000 -0.009915 -0.018079"/>
+	    <mass value="0.058"/>
+        <inertia ixx="1.558414e-05" ixy="-1.729493e-10" ixz="-1.901327e-10" iyy="9.788826e-06" iyz="1.820135e-08" izz="9.495020e-06"/>
+      </inertial>
+      
+
+      
+	      
+	       <visual>
+        	<origin rpy="0 0 0" xyz="-0.000000 -0.010100 -0.017500"/>
+	        <geometry><box size="0.020132 0.040332 0.037000"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 -0.010100 0.001983"/>
+	        <geometry><box size="0.019818 0.040018 0.004034"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.004500"/>
+	        <geometry><box size="0.005412 0.005412 0.001000"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 -0.010100 -0.039771"/>
+	        <geometry><box size="0.019920 0.040120 0.007658"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	  
+	
+      
+
+      
+    </link>
+    
+    
+
+    <link name='leg4_left_link'>
+      
+      <inertial>
+        <origin rpy="0 0 0" xyz="0.000192 0.010581 -0.016353"/>
+	    <mass value="0.012"/>
+        <inertia ixx="7.129164e-06" ixy="-1.083228e-08" ixz="-4.791487e-09" iyy="6.357833e-06" iyz="4.792567e-08" izz="1.558394e-06"/>
+      </inertial>
+      
+
+      
+	      
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000285 0.021262 -0.016756"/>
+	        <geometry><box size="0.020046 0.001565 0.043221"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	  
+	
+      
+
+      
+    </link>
+    
+    
+
+    <link name='leg5_left_link'>
+      
+      <inertial>
+        <origin rpy="0 0 0" xyz="-0.000000 0.000009 0.007180"/>
+	    <mass value="0.008"/>
+        <inertia ixx="8.357953e-07" ixy="9.718290e-17" ixz="8.605056e-09" iyy="2.960480e-06" iyz="-1.207186e-09" izz="2.685580e-06"/>
+      </inertial>
+      
+
+      
+	      
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.000709"/>
+	        <geometry><box size="0.043365 0.020000 0.001582"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="-0.020850 0.000000 0.014099"/>
+	        <geometry><box size="0.001500 0.020395 0.025198"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.020850 0.000000 0.014099"/>
+	        <geometry><box size="0.001500 0.020395 0.025198"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	  
+	
+      
+
+      
+    </link>
+    
+    
+
+    <link name='leg6_left_link'>
+      
+      <inertial>
+        <origin rpy="0 0 0" xyz="0.000000 -0.009915 -0.018079"/>
+	    <mass value="0.058"/>
+        <inertia ixx="1.558414e-05" ixy="-1.729493e-10" ixz="-1.901327e-10" iyy="9.788826e-06" iyz="1.820135e-08" izz="9.495020e-06"/>
+      </inertial>
+      
+
+      
+	      
+	       <visual>
+        	<origin rpy="0 0 0" xyz="-0.000000 -0.010100 -0.017500"/>
+	        <geometry><box size="0.020132 0.040332 0.037000"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 -0.010100 0.001983"/>
+	        <geometry><box size="0.019818 0.040018 0.004034"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.004500"/>
+	        <geometry><box size="0.005412 0.005412 0.001000"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 -0.010100 -0.039771"/>
+	        <geometry><box size="0.019920 0.040120 0.007658"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	  
+	
+      
+
+      
+    </link>
+    
+    
+
+    <link name='leg7_left_link'>
+      
+      <inertial>
+        <origin rpy="0 0 0" xyz="0.000192 0.010581 -0.016353"/>
+	    <mass value="0.012"/>
+        <inertia ixx="7.129164e-06" ixy="-1.083228e-08" ixz="-4.791487e-09" iyy="6.357833e-06" iyz="4.792567e-08" izz="1.558394e-06"/>
+      </inertial>
+      
+
+      
+	      
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000285 0.021262 -0.016756"/>
+	        <geometry><box size="0.020046 0.001565 0.043221"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	  
+	
+      
+
+      
+    </link>
+    
+    
+
+    <link name='leg8_left_link'>
+      
+      <inertial>
+        <origin rpy="0 0 0" xyz="-0.000000 0.000009 0.007180"/>
+	    <mass value="0.008"/>
+        <inertia ixx="8.357953e-07" ixy="9.718290e-17" ixz="8.605056e-09" iyy="2.960480e-06" iyz="-1.207186e-09" izz="2.685580e-06"/>
+      </inertial>
+      
+
+      
+	      
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.000709"/>
+	        <geometry><box size="0.043365 0.020000 0.001582"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="-0.020850 0.000000 0.014099"/>
+	        <geometry><box size="0.001500 0.020395 0.025198"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.020850 0.000000 0.014099"/>
+	        <geometry><box size="0.001500 0.020395 0.025198"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	  
+	
+      
+
+      
+    </link>
+    
+    
+
+    <link name='leg9_left_link'>
+      
+      <inertial>
+        <origin rpy="0 0 0" xyz="0.000000 -0.009915 -0.018079"/>
+	    <mass value="0.058"/>
+        <inertia ixx="1.558414e-05" ixy="-1.729493e-10" ixz="-1.901327e-10" iyy="9.788826e-06" iyz="1.820135e-08" izz="9.495020e-06"/>
+      </inertial>
+      
+
+      
+	      
+	       <visual>
+        	<origin rpy="0 0 0" xyz="-0.000000 -0.010100 -0.017500"/>
+	        <geometry><box size="0.020132 0.040332 0.037000"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 -0.010100 0.001983"/>
+	        <geometry><box size="0.019818 0.040018 0.004034"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.004500"/>
+	        <geometry><box size="0.005412 0.005412 0.001000"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 -0.010100 -0.039771"/>
+	        <geometry><box size="0.019920 0.040120 0.007658"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	  
+	
+      
+
+      
+    </link>
+    
+    
+
+    <link name='leg10_left_link'>
+      
+      <inertial>
+        <origin rpy="0 0 0" xyz="0.000192 0.010581 -0.016353"/>
+	    <mass value="0.012"/>
+        <inertia ixx="7.129164e-06" ixy="-1.083228e-08" ixz="-4.791487e-09" iyy="6.357833e-06" iyz="4.792567e-08" izz="1.558394e-06"/>
+      </inertial>
+      
+
+      
+	      
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000285 0.021262 -0.016756"/>
+	        <geometry><box size="0.020046 0.001565 0.043221"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	  
+	
+      
+
+      
+    </link>
+    
+    
+
+    <link name='leg11_left_link'>
+      
+      <inertial>
+        <origin rpy="0 0 0" xyz="0.000192 0.010581 -0.016353"/>
+	    <mass value="0.012"/>
+        <inertia ixx="7.129164e-06" ixy="-1.083228e-08" ixz="-4.791487e-09" iyy="6.357833e-06" iyz="4.792567e-08" izz="1.558394e-06"/>
+      </inertial>
+      
+
+      
+	      
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000285 0.021262 -0.016756"/>
+	        <geometry><box size="0.020046 0.001565 0.043221"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	  
+	
+      
+
+      
+    </link>
+    
+    
+
+    <link name='leg12_left_link'>
+      
+      <inertial>
+        <origin rpy="0 0 0" xyz="0.000000 -0.009915 -0.018079"/>
+	    <mass value="0.058"/>
+        <inertia ixx="1.558414e-05" ixy="-1.729493e-10" ixz="-1.901327e-10" iyy="9.788826e-06" iyz="1.820135e-08" izz="9.495020e-06"/>
+      </inertial>
+      
+
+      
+	      
+	       <visual>
+        	<origin rpy="0 0 0" xyz="-0.000000 -0.010100 -0.017500"/>
+	        <geometry><box size="0.020132 0.040332 0.037000"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 -0.010100 0.001983"/>
+	        <geometry><box size="0.019818 0.040018 0.004034"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.004500"/>
+	        <geometry><box size="0.005412 0.005412 0.001000"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 -0.010100 -0.039771"/>
+	        <geometry><box size="0.019920 0.040120 0.007658"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	  
+	
+      
+
+      
+    </link>
+    
+    
+
+    <link name='leg13_left_link'>
+      
+      <inertial>
+        <origin rpy="0 0 0" xyz="-0.000012 0.005081 0.002498"/>
+	    <mass value="0.029"/>
+        <inertia ixx="1.642369e-05" ixy="1.345898e-10" ixz="2.694190e-09" iyy="3.420054e-05" iyz="-2.365522e-07" izz="4.988287e-05"/>
+      </inertial>
+      
+
+      
+	      
+	       <visual>
+        	<origin rpy="0 0 0" xyz="-0.020850 0.000000 0.009291"/>
+	        <geometry><box size="0.001534 0.048000 0.015582"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.020850 0.000000 0.009291"/>
+	        <geometry><box size="0.001515 0.048000 0.015582"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="-0.000000 0.000203 0.000834"/>
+	        <geometry><box size="0.119989 0.073382 0.001832"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="-0.000000 0.037191 0.006063"/>
+	        <geometry><box size="0.090330 0.001582 0.012290"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	  
+	
+        
+       
+        <collision name='collision'>
+          <origin rpy="0 0 0" xyz="-0.020850 0.000000 0.009291"/>
+          <laser_retro>0</laser_retro>
+          <max_contacts>4</max_contacts>
+          <geometry><box size="0.001534 0.048000 0.015582"/></geometry>
+        </collision>
+        
+        <collision name='collision'>
+          <origin rpy="0 0 0" xyz="0.020850 0.000000 0.009291"/>
+          <laser_retro>0</laser_retro>
+          <max_contacts>4</max_contacts>
+          <geometry><box size="0.001515 0.048000 0.015582"/></geometry>
+        </collision>
+        
+        <collision name='collision'>
+          <origin rpy="0 0 0" xyz="-0.000000 0.000203 0.000834"/>
+          <laser_retro>0</laser_retro>
+          <max_contacts>4</max_contacts>
+          <geometry><box size="0.119989 0.073382 0.001832"/></geometry>
+        </collision>
+        
+        <collision name='collision'>
+          <origin rpy="0 0 0" xyz="-0.000000 0.037191 0.006063"/>
+          <laser_retro>0</laser_retro>
+          <max_contacts>4</max_contacts>
+          <geometry><box size="0.090330 0.001582 0.012290"/></geometry>
+        </collision>
+        
+      
+
+      
+    </link>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    <link name='leg0_right_link'>
+      
+      <inertial>
+        <origin rpy="0 0 0" xyz="0.000000 -0.009915 -0.018079"/>
+	    <mass value="0.058"/>
+        <inertia ixx="1.558414e-05" ixy="-1.729493e-10" ixz="-1.901327e-10" iyy="9.788826e-06" iyz="1.820135e-08" izz="9.495020e-06"/>
+      </inertial>
+      
+
+      
+	      
+	       <visual>
+        	<origin rpy="0 0 0" xyz="-0.000000 -0.010100 -0.017500"/>
+	        <geometry><box size="0.020132 0.040332 0.037000"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 -0.010100 0.001983"/>
+	        <geometry><box size="0.019818 0.040018 0.004034"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.004500"/>
+	        <geometry><box size="0.005412 0.005412 0.001000"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 -0.010100 -0.039771"/>
+	        <geometry><box size="0.019920 0.040120 0.007658"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	  
+	
+      
+
+      
+    </link>
+    
+    
+
+    <link name='leg1_right_link'>
+      
+      <inertial>
+        <origin rpy="0 0 0" xyz="0.000192 0.010581 -0.016353"/>
+	    <mass value="0.012"/>
+        <inertia ixx="7.129164e-06" ixy="-1.083228e-08" ixz="-4.791487e-09" iyy="6.357833e-06" iyz="4.792567e-08" izz="1.558394e-06"/>
+      </inertial>
+      
+
+      
+	      
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000285 0.021262 -0.016756"/>
+	        <geometry><box size="0.020046 0.001565 0.043221"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	  
+	
+      
+
+      
+    </link>
+    
+    
+
+    <link name='leg2_right_link'>
+      
+      <inertial>
+        <origin rpy="0 0 0" xyz="-0.000036 -0.000072 0.002238"/>
+	    <mass value="0.009"/>
+        <inertia ixx="1.294746e-06" ixy="1.679879e-09" ixz="1.077743e-10" iyy="2.234025e-06" iyz="5.007505e-09" izz="3.396097e-06"/>
+      </inertial>
+      
+
+      
+	      
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.000709"/>
+	        <geometry><box size="0.043365 0.040000 0.001582"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="-0.020850 0.000000 0.006099"/>
+	        <geometry><box size="0.001504 0.040395 0.009198"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.020850 0.000000 0.006099"/>
+	        <geometry><box size="0.001504 0.040395 0.009198"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	  
+	
+      
+
+      
+    </link>
+    
+    
+
+    <link name='leg3_right_link'>
+      
+      <inertial>
+        <origin rpy="0 0 0" xyz="0.000000 -0.009915 -0.018079"/>
+	    <mass value="0.058"/>
+        <inertia ixx="1.558414e-05" ixy="-1.729493e-10" ixz="-1.901327e-10" iyy="9.788826e-06" iyz="1.820135e-08" izz="9.495020e-06"/>
+      </inertial>
+      
+
+      
+	      
+	       <visual>
+        	<origin rpy="0 0 0" xyz="-0.000000 -0.010100 -0.017500"/>
+	        <geometry><box size="0.020132 0.040332 0.037000"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 -0.010100 0.001983"/>
+	        <geometry><box size="0.019818 0.040018 0.004034"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.004500"/>
+	        <geometry><box size="0.005412 0.005412 0.001000"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 -0.010100 -0.039771"/>
+	        <geometry><box size="0.019920 0.040120 0.007658"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	  
+	
+      
+
+      
+    </link>
+    
+    
+
+    <link name='leg4_right_link'>
+      
+      <inertial>
+        <origin rpy="0 0 0" xyz="0.000192 0.010581 -0.016353"/>
+	    <mass value="0.012"/>
+        <inertia ixx="7.129164e-06" ixy="-1.083228e-08" ixz="-4.791487e-09" iyy="6.357833e-06" iyz="4.792567e-08" izz="1.558394e-06"/>
+      </inertial>
+      
+
+      
+	      
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000285 0.021262 -0.016756"/>
+	        <geometry><box size="0.020046 0.001565 0.043221"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	  
+	
+      
+
+      
+    </link>
+    
+    
+
+    <link name='leg5_right_link'>
+      
+      <inertial>
+        <origin rpy="0 0 0" xyz="-0.000000 0.000009 0.007180"/>
+	    <mass value="0.008"/>
+        <inertia ixx="8.357953e-07" ixy="9.718290e-17" ixz="8.605056e-09" iyy="2.960480e-06" iyz="-1.207186e-09" izz="2.685580e-06"/>
+      </inertial>
+      
+
+      
+	      
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.000709"/>
+	        <geometry><box size="0.043365 0.020000 0.001582"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="-0.020850 0.000000 0.014099"/>
+	        <geometry><box size="0.001500 0.020395 0.025198"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.020850 0.000000 0.014099"/>
+	        <geometry><box size="0.001500 0.020395 0.025198"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	  
+	
+      
+
+      
+    </link>
+    
+    
+
+    <link name='leg6_right_link'>
+      
+      <inertial>
+        <origin rpy="0 0 0" xyz="0.000000 -0.009915 -0.018079"/>
+	    <mass value="0.058"/>
+        <inertia ixx="1.558414e-05" ixy="-1.729493e-10" ixz="-1.901327e-10" iyy="9.788826e-06" iyz="1.820135e-08" izz="9.495020e-06"/>
+      </inertial>
+      
+
+      
+	      
+	       <visual>
+        	<origin rpy="0 0 0" xyz="-0.000000 -0.010100 -0.017500"/>
+	        <geometry><box size="0.020132 0.040332 0.037000"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 -0.010100 0.001983"/>
+	        <geometry><box size="0.019818 0.040018 0.004034"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.004500"/>
+	        <geometry><box size="0.005412 0.005412 0.001000"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 -0.010100 -0.039771"/>
+	        <geometry><box size="0.019920 0.040120 0.007658"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	  
+	
+      
+
+      
+    </link>
+    
+    
+
+    <link name='leg7_right_link'>
+      
+      <inertial>
+        <origin rpy="0 0 0" xyz="0.000192 0.010581 -0.016353"/>
+	    <mass value="0.012"/>
+        <inertia ixx="7.129164e-06" ixy="-1.083228e-08" ixz="-4.791487e-09" iyy="6.357833e-06" iyz="4.792567e-08" izz="1.558394e-06"/>
+      </inertial>
+      
+
+      
+	      
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000285 0.021262 -0.016756"/>
+	        <geometry><box size="0.020046 0.001565 0.043221"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	  
+	
+      
+
+      
+    </link>
+    
+    
+
+    <link name='leg8_right_link'>
+      
+      <inertial>
+        <origin rpy="0 0 0" xyz="-0.000000 0.000009 0.007180"/>
+	    <mass value="0.008"/>
+        <inertia ixx="8.357953e-07" ixy="9.718290e-17" ixz="8.605056e-09" iyy="2.960480e-06" iyz="-1.207186e-09" izz="2.685580e-06"/>
+      </inertial>
+      
+
+      
+	      
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.000709"/>
+	        <geometry><box size="0.043365 0.020000 0.001582"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="-0.020850 0.000000 0.014099"/>
+	        <geometry><box size="0.001500 0.020395 0.025198"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.020850 0.000000 0.014099"/>
+	        <geometry><box size="0.001500 0.020395 0.025198"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	  
+	
+      
+
+      
+    </link>
+    
+    
+
+    <link name='leg9_right_link'>
+      
+      <inertial>
+        <origin rpy="0 0 0" xyz="0.000000 -0.009915 -0.018079"/>
+	    <mass value="0.058"/>
+        <inertia ixx="1.558414e-05" ixy="-1.729493e-10" ixz="-1.901327e-10" iyy="9.788826e-06" iyz="1.820135e-08" izz="9.495020e-06"/>
+      </inertial>
+      
+
+      
+	      
+	       <visual>
+        	<origin rpy="0 0 0" xyz="-0.000000 -0.010100 -0.017500"/>
+	        <geometry><box size="0.020132 0.040332 0.037000"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 -0.010100 0.001983"/>
+	        <geometry><box size="0.019818 0.040018 0.004034"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.004500"/>
+	        <geometry><box size="0.005412 0.005412 0.001000"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 -0.010100 -0.039771"/>
+	        <geometry><box size="0.019920 0.040120 0.007658"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	  
+	
+      
+
+      
+    </link>
+    
+    
+
+    <link name='leg10_right_link'>
+      
+      <inertial>
+        <origin rpy="0 0 0" xyz="0.000192 0.010581 -0.016353"/>
+	    <mass value="0.012"/>
+        <inertia ixx="7.129164e-06" ixy="-1.083228e-08" ixz="-4.791487e-09" iyy="6.357833e-06" iyz="4.792567e-08" izz="1.558394e-06"/>
+      </inertial>
+      
+
+      
+	      
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000285 0.021262 -0.016756"/>
+	        <geometry><box size="0.020046 0.001565 0.043221"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	  
+	
+      
+
+      
+    </link>
+    
+    
+
+    <link name='leg11_right_link'>
+      
+      <inertial>
+        <origin rpy="0 0 0" xyz="0.000192 0.010581 -0.016353"/>
+	    <mass value="0.012"/>
+        <inertia ixx="7.129164e-06" ixy="-1.083228e-08" ixz="-4.791487e-09" iyy="6.357833e-06" iyz="4.792567e-08" izz="1.558394e-06"/>
+      </inertial>
+      
+
+      
+	      
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000285 0.021262 -0.016756"/>
+	        <geometry><box size="0.020046 0.001565 0.043221"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	  
+	
+      
+
+      
+    </link>
+    
+    
+
+    <link name='leg12_right_link'>
+      
+      <inertial>
+        <origin rpy="0 0 0" xyz="0.000000 -0.009915 -0.018079"/>
+	    <mass value="0.058"/>
+        <inertia ixx="1.558414e-05" ixy="-1.729493e-10" ixz="-1.901327e-10" iyy="9.788826e-06" iyz="1.820135e-08" izz="9.495020e-06"/>
+      </inertial>
+      
+
+      
+	      
+	       <visual>
+        	<origin rpy="0 0 0" xyz="-0.000000 -0.010100 -0.017500"/>
+	        <geometry><box size="0.020132 0.040332 0.037000"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 -0.010100 0.001983"/>
+	        <geometry><box size="0.019818 0.040018 0.004034"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.004500"/>
+	        <geometry><box size="0.005412 0.005412 0.001000"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 -0.010100 -0.039771"/>
+	        <geometry><box size="0.019920 0.040120 0.007658"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	  
+	
+      
+
+      
+    </link>
+    
+    
+
+    <link name='leg13_right_link'>
+      
+      <inertial>
+        <origin rpy="0 0 0" xyz="-0.000012 0.005081 0.002498"/>
+	    <mass value="0.029"/>
+        <inertia ixx="1.642369e-05" ixy="1.345898e-10" ixz="2.694190e-09" iyy="3.420054e-05" iyz="-2.365522e-07" izz="4.988287e-05"/>
+      </inertial>
+      
+
+      
+	      
+	       <visual>
+        	<origin rpy="0 0 0" xyz="-0.020850 0.000000 0.009291"/>
+	        <geometry><box size="0.001534 0.048000 0.015582"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.020850 0.000000 0.009291"/>
+	        <geometry><box size="0.001515 0.048000 0.015582"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="-0.000000 0.000203 0.000834"/>
+	        <geometry><box size="0.119989 0.073382 0.001832"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="-0.000000 0.037191 0.006063"/>
+	        <geometry><box size="0.090330 0.001582 0.012290"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	  
+	
+        
+       
+        <collision name='collision'>
+          <origin rpy="0 0 0" xyz="-0.020850 0.000000 0.009291"/>
+          <laser_retro>0</laser_retro>
+          <max_contacts>4</max_contacts>
+          <geometry><box size="0.001534 0.048000 0.015582"/></geometry>
+        </collision>
+        
+        <collision name='collision'>
+          <origin rpy="0 0 0" xyz="0.020850 0.000000 0.009291"/>
+          <laser_retro>0</laser_retro>
+          <max_contacts>4</max_contacts>
+          <geometry><box size="0.001515 0.048000 0.015582"/></geometry>
+        </collision>
+        
+        <collision name='collision'>
+          <origin rpy="0 0 0" xyz="-0.000000 0.000203 0.000834"/>
+          <laser_retro>0</laser_retro>
+          <max_contacts>4</max_contacts>
+          <geometry><box size="0.119989 0.073382 0.001832"/></geometry>
+        </collision>
+        
+        <collision name='collision'>
+          <origin rpy="0 0 0" xyz="-0.000000 0.037191 0.006063"/>
+          <laser_retro>0</laser_retro>
+          <max_contacts>4</max_contacts>
+          <geometry><box size="0.090330 0.001582 0.012290"/></geometry>
+        </collision>
+        
+      
+
+      
+    </link>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    <link name='arm0_left_link'>
+      
+      <inertial>
+        <origin rpy="0 0 0" xyz="0.000000 -0.009915 -0.018079"/>
+	    <mass value="0.058"/>
+        <inertia ixx="1.558414e-05" ixy="-1.729493e-10" ixz="-1.901327e-10" iyy="9.788826e-06" iyz="1.820135e-08" izz="9.495020e-06"/>
+      </inertial>
+      
+
+      
+	      
+	       <visual>
+        	<origin rpy="0 0 0" xyz="-0.000000 -0.010100 -0.017500"/>
+	        <geometry><box size="0.020132 0.040332 0.037000"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 -0.010100 0.001983"/>
+	        <geometry><box size="0.019818 0.040018 0.004034"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.004500"/>
+	        <geometry><box size="0.005412 0.005412 0.001000"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 -0.010100 -0.039771"/>
+	        <geometry><box size="0.019920 0.040120 0.007658"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	  
+	
+      
+
+      
+    </link>
+    
+    
+
+    <link name='arm1_left_link'>
+      
+      <inertial>
+        <origin rpy="0 0 0" xyz="-0.000000 -0.000000 0.001294"/>
+	    <mass value="0.002"/>
+        <inertia ixx="5.043949e-08" ixy="-3.062436e-14" ixz="-2.642094e-13" iyy="5.043971e-08" iyz="-1.711337e-16" izz="9.700972e-08"/>
+      </inertial>
+      
+
+      
+	      
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.002250"/>
+	        <geometry><box size="0.021648 0.021648 0.004500"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.000250"/>
+	        <geometry><box size="0.006494 0.006494 0.000500"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	  
+	
+      
+
+      
+    </link>
+    
+    
+
+    <link name='arm2_left_link'>
+      
+      <inertial>
+        <origin rpy="0 0 0" xyz="0.000192 0.010581 -0.016353"/>
+	    <mass value="0.012"/>
+        <inertia ixx="7.129164e-06" ixy="-1.083228e-08" ixz="-4.791487e-09" iyy="6.357833e-06" iyz="4.792567e-08" izz="1.558394e-06"/>
+      </inertial>
+      
+
+      
+	      
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000285 0.021262 -0.016756"/>
+	        <geometry><box size="0.020046 0.001565 0.043221"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	  
+	
+      
+
+      
+    </link>
+    
+    
+
+    <link name='arm3_left_link'>
+      
+      <inertial>
+        <origin rpy="0 0 0" xyz="0.000000 -0.009915 -0.018079"/>
+	    <mass value="0.058"/>
+        <inertia ixx="1.558414e-05" ixy="-1.729493e-10" ixz="-1.901327e-10" iyy="9.788826e-06" iyz="1.820135e-08" izz="9.495020e-06"/>
+      </inertial>
+      
+
+      
+	      
+	       <visual>
+        	<origin rpy="0 0 0" xyz="-0.000000 -0.010100 -0.017500"/>
+	        <geometry><box size="0.020132 0.040332 0.037000"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 -0.010100 0.001983"/>
+	        <geometry><box size="0.019818 0.040018 0.004034"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.004500"/>
+	        <geometry><box size="0.005412 0.005412 0.001000"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 -0.010100 -0.039771"/>
+	        <geometry><box size="0.019920 0.040120 0.007658"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	  
+	
+      
+
+      
+    </link>
+    
+    
+
+    <link name='arm4_left_link'>
+      
+      <inertial>
+        <origin rpy="0 0 0" xyz="-0.000000 0.000009 0.007180"/>
+	    <mass value="0.008"/>
+        <inertia ixx="8.357953e-07" ixy="9.718290e-17" ixz="8.605056e-09" iyy="2.960480e-06" iyz="-1.207186e-09" izz="2.685580e-06"/>
+      </inertial>
+      
+
+      
+	      
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.000709"/>
+	        <geometry><box size="0.043365 0.020000 0.001582"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="-0.020850 0.000000 0.014099"/>
+	        <geometry><box size="0.001500 0.020395 0.025198"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.020850 0.000000 0.014099"/>
+	        <geometry><box size="0.001500 0.020395 0.025198"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	  
+	
+      
+
+      
+    </link>
+    
+    
+
+    <link name='arm5_left_link'>
+      
+      <inertial>
+        <origin rpy="0 0 0" xyz="-0.000000 0.000009 0.007180"/>
+	    <mass value="0.008"/>
+        <inertia ixx="8.357953e-07" ixy="9.718290e-17" ixz="8.605056e-09" iyy="2.960480e-06" iyz="-1.207186e-09" izz="2.685580e-06"/>
+      </inertial>
+      
+
+      
+	      
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.000709"/>
+	        <geometry><box size="0.043365 0.020000 0.001582"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="-0.020850 0.000000 0.014099"/>
+	        <geometry><box size="0.001500 0.020395 0.025198"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.020850 0.000000 0.014099"/>
+	        <geometry><box size="0.001500 0.020395 0.025198"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	  
+	
+      
+
+      
+    </link>
+    
+    
+
+    <link name='arm6_left_link'>
+      
+      <inertial>
+        <origin rpy="0 0 0" xyz="0.000000 -0.009915 -0.018079"/>
+	    <mass value="0.058"/>
+        <inertia ixx="1.558414e-05" ixy="-1.729493e-10" ixz="-1.901327e-10" iyy="9.788826e-06" iyz="1.820135e-08" izz="9.495020e-06"/>
+      </inertial>
+      
+
+      
+	      
+	       <visual>
+        	<origin rpy="0 0 0" xyz="-0.000000 -0.010100 -0.017500"/>
+	        <geometry><box size="0.020132 0.040332 0.037000"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 -0.010100 0.001983"/>
+	        <geometry><box size="0.019818 0.040018 0.004034"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.004500"/>
+	        <geometry><box size="0.005412 0.005412 0.001000"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 -0.010100 -0.039771"/>
+	        <geometry><box size="0.019920 0.040120 0.007658"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	  
+	
+      
+
+      
+    </link>
+    
+    
+
+    <link name='arm7_left_link'>
+      
+      <inertial>
+        <origin rpy="0 0 0" xyz="0.000192 0.010581 -0.016353"/>
+	    <mass value="0.012"/>
+        <inertia ixx="7.129164e-06" ixy="-1.083228e-08" ixz="-4.791487e-09" iyy="6.357833e-06" iyz="4.792567e-08" izz="1.558394e-06"/>
+      </inertial>
+      
+
+      
+	      
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000285 0.021262 -0.016756"/>
+	        <geometry><box size="0.020046 0.001565 0.043221"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	  
+	
+      
+
+      
+    </link>
+    
+    
+
+    <link name='arm8_left_link'>
+      
+      <inertial>
+        <origin rpy="0 0 0" xyz="0.000000 0.005943 0.019674"/>
+	    <mass value="0.01"/>
+        <inertia ixx="3.988646e-06" ixy="-3.192255e-12" ixz="2.159262e-09" iyy="4.775230e-06" iyz="-1.564893e-07" izz="1.448142e-06"/>
+      </inertial>
+      
+
+      
+	      
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.000750"/>
+	        <geometry><box size="0.040165 0.020165 0.001500"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="-0.000000 0.005737 0.030157"/>
+	        <geometry><box size="0.035000 0.011690 0.060479"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	  
+	
+        
+       
+        <collision name='collision'>
+          <origin rpy="0 0 0" xyz="0.000000 0.000000 0.000750"/>
+          <laser_retro>0</laser_retro>
+          <max_contacts>4</max_contacts>
+          <geometry><box size="0.040165 0.020165 0.001500"/></geometry>
+        </collision>
+        
+        <collision name='collision'>
+          <origin rpy="0 0 0" xyz="-0.000000 0.005737 0.030157"/>
+          <laser_retro>0</laser_retro>
+          <max_contacts>4</max_contacts>
+          <geometry><box size="0.035000 0.011690 0.060479"/></geometry>
+        </collision>
+        
+      
+
+      
+    </link>
+    
+    
+
+    <link name='cam0_left_link'>
+      
+      <inertial>
+        <origin rpy="0 0 0" xyz="0.000002 0.009285 0.015049"/>
+	    <mass value="0.018"/>
+        <inertia ixx="1.864125e-06" ixy="7.858595e-11" ixz="-2.642526e-10" iyy="3.262842e-06" iyz="9.471758e-09" izz="2.668717e-06"/>
+      </inertial>
+      
+
+      
+	      
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 0.010393 0.015000"/>
+	        <geometry><box size="0.040659 0.031214 0.030049"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	  
+	
+      
+
+      
+    </link>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    <link name='arm0_right_link'>
+      
+      <inertial>
+        <origin rpy="0 0 0" xyz="0.000000 -0.009915 -0.018079"/>
+	    <mass value="0.058"/>
+        <inertia ixx="1.558414e-05" ixy="-1.729493e-10" ixz="-1.901327e-10" iyy="9.788826e-06" iyz="1.820135e-08" izz="9.495020e-06"/>
+      </inertial>
+      
+
+      
+	      
+	       <visual>
+        	<origin rpy="0 0 0" xyz="-0.000000 -0.010100 -0.017500"/>
+	        <geometry><box size="0.020132 0.040332 0.037000"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 -0.010100 0.001983"/>
+	        <geometry><box size="0.019818 0.040018 0.004034"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.004500"/>
+	        <geometry><box size="0.005412 0.005412 0.001000"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 -0.010100 -0.039771"/>
+	        <geometry><box size="0.019920 0.040120 0.007658"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	  
+	
+      
+
+      
+    </link>
+    
+    
+
+    <link name='arm1_right_link'>
+      
+      <inertial>
+        <origin rpy="0 0 0" xyz="-0.000000 -0.000000 0.001294"/>
+	    <mass value="0.002"/>
+        <inertia ixx="5.043949e-08" ixy="-3.062436e-14" ixz="-2.642094e-13" iyy="5.043971e-08" iyz="-1.711337e-16" izz="9.700972e-08"/>
+      </inertial>
+      
+
+      
+	      
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.002250"/>
+	        <geometry><box size="0.021648 0.021648 0.004500"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.000250"/>
+	        <geometry><box size="0.006494 0.006494 0.000500"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	  
+	
+      
+
+      
+    </link>
+    
+    
+
+    <link name='arm2_right_link'>
+      
+      <inertial>
+        <origin rpy="0 0 0" xyz="0.000192 0.010581 -0.016353"/>
+	    <mass value="0.012"/>
+        <inertia ixx="7.129164e-06" ixy="-1.083228e-08" ixz="-4.791487e-09" iyy="6.357833e-06" iyz="4.792567e-08" izz="1.558394e-06"/>
+      </inertial>
+      
+
+      
+	      
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000285 0.021262 -0.016756"/>
+	        <geometry><box size="0.020046 0.001565 0.043221"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	  
+	
+      
+
+      
+    </link>
+    
+    
+
+    <link name='arm3_right_link'>
+      
+      <inertial>
+        <origin rpy="0 0 0" xyz="0.000000 -0.009915 -0.018079"/>
+	    <mass value="0.058"/>
+        <inertia ixx="1.558414e-05" ixy="-1.729493e-10" ixz="-1.901327e-10" iyy="9.788826e-06" iyz="1.820135e-08" izz="9.495020e-06"/>
+      </inertial>
+      
+
+      
+	      
+	       <visual>
+        	<origin rpy="0 0 0" xyz="-0.000000 -0.010100 -0.017500"/>
+	        <geometry><box size="0.020132 0.040332 0.037000"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 -0.010100 0.001983"/>
+	        <geometry><box size="0.019818 0.040018 0.004034"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.004500"/>
+	        <geometry><box size="0.005412 0.005412 0.001000"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 -0.010100 -0.039771"/>
+	        <geometry><box size="0.019920 0.040120 0.007658"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	  
+	
+      
+
+      
+    </link>
+    
+    
+
+    <link name='arm4_right_link'>
+      
+      <inertial>
+        <origin rpy="0 0 0" xyz="-0.000000 0.000009 0.007180"/>
+	    <mass value="0.008"/>
+        <inertia ixx="8.357953e-07" ixy="9.718290e-17" ixz="8.605056e-09" iyy="2.960480e-06" iyz="-1.207186e-09" izz="2.685580e-06"/>
+      </inertial>
+      
+
+      
+	      
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.000709"/>
+	        <geometry><box size="0.043365 0.020000 0.001582"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="-0.020850 0.000000 0.014099"/>
+	        <geometry><box size="0.001500 0.020395 0.025198"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.020850 0.000000 0.014099"/>
+	        <geometry><box size="0.001500 0.020395 0.025198"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	  
+	
+      
+
+      
+    </link>
+    
+    
+
+    <link name='arm5_right_link'>
+      
+      <inertial>
+        <origin rpy="0 0 0" xyz="-0.000000 0.000009 0.007180"/>
+	    <mass value="0.008"/>
+        <inertia ixx="8.357953e-07" ixy="9.718290e-17" ixz="8.605056e-09" iyy="2.960480e-06" iyz="-1.207186e-09" izz="2.685580e-06"/>
+      </inertial>
+      
+
+      
+	      
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.000709"/>
+	        <geometry><box size="0.043365 0.020000 0.001582"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="-0.020850 0.000000 0.014099"/>
+	        <geometry><box size="0.001500 0.020395 0.025198"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.020850 0.000000 0.014099"/>
+	        <geometry><box size="0.001500 0.020395 0.025198"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	  
+	
+      
+
+      
+    </link>
+    
+    
+
+    <link name='arm6_right_link'>
+      
+      <inertial>
+        <origin rpy="0 0 0" xyz="0.000000 -0.009915 -0.018079"/>
+	    <mass value="0.058"/>
+        <inertia ixx="1.558414e-05" ixy="-1.729493e-10" ixz="-1.901327e-10" iyy="9.788826e-06" iyz="1.820135e-08" izz="9.495020e-06"/>
+      </inertial>
+      
+
+      
+	      
+	       <visual>
+        	<origin rpy="0 0 0" xyz="-0.000000 -0.010100 -0.017500"/>
+	        <geometry><box size="0.020132 0.040332 0.037000"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 -0.010100 0.001983"/>
+	        <geometry><box size="0.019818 0.040018 0.004034"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.004500"/>
+	        <geometry><box size="0.005412 0.005412 0.001000"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 -0.010100 -0.039771"/>
+	        <geometry><box size="0.019920 0.040120 0.007658"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	  
+	
+      
+
+      
+    </link>
+    
+    
+
+    <link name='arm7_right_link'>
+      
+      <inertial>
+        <origin rpy="0 0 0" xyz="0.000192 0.010581 -0.016353"/>
+	    <mass value="0.012"/>
+        <inertia ixx="7.129164e-06" ixy="-1.083228e-08" ixz="-4.791487e-09" iyy="6.357833e-06" iyz="4.792567e-08" izz="1.558394e-06"/>
+      </inertial>
+      
+
+      
+	      
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000285 0.021262 -0.016756"/>
+	        <geometry><box size="0.020046 0.001565 0.043221"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	  
+	
+      
+
+      
+    </link>
+    
+    
+
+    <link name='arm8_right_link'>
+      
+      <inertial>
+        <origin rpy="0 0 0" xyz="0.000000 0.005943 0.019674"/>
+	    <mass value="0.01"/>
+        <inertia ixx="3.988646e-06" ixy="-3.192255e-12" ixz="2.159262e-09" iyy="4.775230e-06" iyz="-1.564893e-07" izz="1.448142e-06"/>
+      </inertial>
+      
+
+      
+	      
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.000750"/>
+	        <geometry><box size="0.040165 0.020165 0.001500"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	       <visual>
+        	<origin rpy="0 0 0" xyz="-0.000000 0.005737 0.030157"/>
+	        <geometry><box size="0.035000 0.011690 0.060479"/></geometry>
+	        <material name="aluminum"/>
+	       </visual>
+          
+	  
+	
+        
+       
+        <collision name='collision'>
+          <origin rpy="0 0 0" xyz="0.000000 0.000000 0.000750"/>
+          <laser_retro>0</laser_retro>
+          <max_contacts>4</max_contacts>
+          <geometry><box size="0.040165 0.020165 0.001500"/></geometry>
+        </collision>
+        
+        <collision name='collision'>
+          <origin rpy="0 0 0" xyz="-0.000000 0.005737 0.030157"/>
+          <laser_retro>0</laser_retro>
+          <max_contacts>4</max_contacts>
+          <geometry><box size="0.035000 0.011690 0.060479"/></geometry>
+        </collision>
+        
+      
+
+      
+    </link>
+    
+    
+
+    <link name='cam0_right_link'>
+      
+      <inertial>
+        <origin rpy="0 0 0" xyz="0.000002 0.009285 0.015049"/>
+	    <mass value="0.018"/>
+        <inertia ixx="1.864125e-06" ixy="7.858595e-11" ixz="-2.642526e-10" iyy="3.262842e-06" iyz="9.471758e-09" izz="2.668717e-06"/>
+      </inertial>
+      
+
+      
+	      
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 0.010393 0.015000"/>
+	        <geometry><box size="0.040659 0.031214 0.030049"/></geometry>
+	        <material name="plastic"/>
+	       </visual>
+          
+	  
+	
+      
+
+      
+    </link>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+    
+      
+      
+    
+      
+        <joint name="battery_joint" type="fixed">
+ 		  <child link="battery_link"/>
+ 		  <parent link="chassis_center_link"/>
+          <origin rpy="0.0 1.570796 0.0" xyz="-0.02 0.011 0.035"/>
+		  <axis xyz="0 0 1"/>
+		  <limit effort="1.2748" velocity="2.083"/>
+          <joint_properties damping="0.0" friction="0.0"/>  
+	    </joint>
+      
+      
+    
+    
+      
+        <joint name="head0_center_joint" type="fixed">
+ 		  <child link="head0_center_link"/>
+ 		  <parent link="chassis_center_link"/>
+          <origin rpy="1.570796 0.0 0.0" xyz="-0.001 0.097 0.0"/>
+		  <axis xyz="0 0 1"/>
+		  <limit effort="1.2748" velocity="2.083"/>
+          <joint_properties damping="0.0" friction="0.0"/>  
+	    </joint>
+      
+      
+    
+      
+        <joint name="head1_center_joint" type="fixed">
+ 		  <child link="head1_center_link"/>
+ 		  <parent link="head0_center_link"/>
+          <origin rpy="0.0 3.141592 0.0" xyz="0.0 0.0 0.0"/>
+		  <axis xyz="0 0 1"/>
+		  <limit effort="1.2748" velocity="2.083"/>
+          <joint_properties damping="0.0" friction="0.0"/>  
+	    </joint>
+      
+      
+    
+      
+        <joint name="head2_center_joint" type="continuous">
+ 		  <child link="head2_center_link"/>
+ 		  <parent link="head1_center_link"/>
+          <origin rpy="0.0 3.141592 -1.570796" xyz="0.0 0.0 0.009"/>
+		  <axis xyz="0 0 1"/>
+		  <limit effort="1.2748" velocity="2.083"/>
+          <joint_properties damping="0.0" friction="0.0"/>  
+	    </joint>
+      
+      
+    
+      
+        <joint name="cam0_center_joint" type="fixed">
+ 		  <child link="cam0_center_link"/>
+ 		  <parent link="head2_center_link"/>
+          <origin rpy="1.5 0.0 0.0" xyz="0.0 0.04 -0.03"/>
+		  <axis xyz="0 0 1"/>
+		  <limit effort="1.2748" velocity="2.083"/>
+          <joint_properties damping="0.0" friction="0.0"/>  
+	    </joint>
+      
+      
+    
+    
+      
+        <joint name="aiy0_center_joint" type="fixed">
+ 		  <child link="aiy0_center_link"/>
+ 		  <parent link="head2_center_link"/>
+          <origin rpy="1.570796 3.141592 0.0" xyz="0.0 0.00 -0.039"/>
+		  <axis xyz="0 0 1"/>
+		  <limit effort="1.2748" velocity="2.083"/>
+          <joint_properties damping="0.0" friction="0.0"/>  
+	    </joint>
+      
+      
+    
+    
+    
+    
+    
+      
+        <joint name="leg0_left_joint" type="fixed">
+ 		  <child link="leg0_left_link"/>
+ 		  <parent link="chassis_center_link"/>
+          <origin rpy="1.570796 0.0 1.570796" xyz="0.018 0.0 0.033"/>
+		  <axis xyz="0 0 1"/>
+		  <limit effort="1.2748" velocity="2.083"/>
+          <joint_properties damping="0.0" friction="0.0"/>  
+	    </joint>
+      
+      
+    
+      
+        <joint name="leg1_left_joint" type="continuous">
+ 		  <child link="leg1_left_link"/>
+ 		  <parent link="leg0_left_link"/>
+          <origin rpy="0.0 0.0 1.570796" xyz="0.0 0.0 0.0"/>
+		  <axis xyz="0 0 1"/>
+		  <limit effort="1.2748" velocity="2.083"/>
+          <joint_properties damping="0.0" friction="0.0"/>  
+	    </joint>
+      
+      
+    
+      
+        <joint name="leg2_left_joint" type="fixed">
+ 		  <child link="leg2_left_link"/>
+ 		  <parent link="leg1_left_link"/>
+          <origin rpy="-1.570796 0.0 0.0" xyz="0.000 0.022 -0.017"/>
+		  <axis xyz="0 0 1"/>
+		  <limit effort="1.2748" velocity="2.083"/>
+          <joint_properties damping="0.0" friction="0.0"/>  
+	    </joint>
+      
+      
+    
+      
+        <joint name="leg3_left_joint" type="fixed">
+ 		  <child link="leg3_left_link"/>
+ 		  <parent link="leg2_left_link"/>
+          <origin rpy="0.0 1.570796 0.0" xyz="0.018 0.010 0.016"/>
+		  <axis xyz="0 0 1"/>
+		  <limit effort="1.2748" velocity="2.083"/>
+          <joint_properties damping="0.0" friction="0.0"/>  
+	    </joint>
+      
+      
+    
+      
+        <joint name="leg4_left_joint" type="continuous">
+ 		  <child link="leg4_left_link"/>
+ 		  <parent link="leg3_left_link"/>
+          <origin rpy="0.0 0.0 1.570796" xyz="0.0 0.0 0.0"/>
+		  <axis xyz="0 0 1"/>
+		  <limit effort="1.2748" velocity="2.083"/>
+          <joint_properties damping="0.0" friction="0.0"/>  
+	    </joint>
+      
+      
+    
+      
+        <joint name="leg5_left_joint" type="fixed">
+ 		  <child link="leg5_left_link"/>
+ 		  <parent link="leg4_left_link"/>
+          <origin rpy="0.0 1.570796 1.570796" xyz="0.00 0.022 -0.017"/>
+		  <axis xyz="0 0 1"/>
+		  <limit effort="1.2748" velocity="2.083"/>
+          <joint_properties damping="0.0" friction="0.0"/>  
+	    </joint>
+      
+      
+    
+      
+        <joint name="leg6_left_joint" type="fixed">
+ 		  <child link="leg6_left_link"/>
+ 		  <parent link="leg5_left_link"/>
+          <origin rpy="1.570796 0.0 1.570796" xyz="0.018 0.00 0.038"/>
+		  <axis xyz="0 0 1"/>
+		  <limit effort="1.2748" velocity="2.083"/>
+          <joint_properties damping="0.0" friction="0.0"/>  
+	    </joint>
+      
+      
+    
+      
+        <joint name="leg7_left_joint" type="continuous">
+ 		  <child link="leg7_left_link"/>
+ 		  <parent link="leg6_left_link"/>
+          <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+		  <axis xyz="0 0 1"/>
+		  <limit effort="1.2748" velocity="2.083"/>
+          <joint_properties damping="0.0" friction="0.0"/>  
+	    </joint>
+      
+      
+    
+      
+        <joint name="leg8_left_joint" type="fixed">
+ 		  <child link="leg8_left_link"/>
+ 		  <parent link="leg7_left_link"/>
+          <origin rpy="0.0 1.570796 1.570796" xyz="0.00 0.022 -0.017"/>
+		  <axis xyz="0 0 1"/>
+		  <limit effort="1.2748" velocity="2.083"/>
+          <joint_properties damping="0.0" friction="0.0"/>  
+	    </joint>
+      
+      
+    
+      
+        <joint name="leg9_left_joint" type="fixed">
+ 		  <child link="leg9_left_link"/>
+ 		  <parent link="leg8_left_link"/>
+          <origin rpy="1.570796 0.0 -1.570796" xyz="-0.018 0.00 0.038"/>
+		  <axis xyz="0 0 1"/>
+		  <limit effort="1.2748" velocity="2.083"/>
+          <joint_properties damping="0.0" friction="0.0"/>  
+	    </joint>
+      
+      
+    
+      
+        <joint name="leg10_left_joint" type="continuous">
+ 		  <child link="leg10_left_link"/>
+ 		  <parent link="leg9_left_link"/>
+          <origin rpy="0.0 0.0 0.0" xyz="0.0 0.00 0.00"/>
+		  <axis xyz="0 0 1"/>
+		  <limit effort="1.2748" velocity="2.083"/>
+          <joint_properties damping="0.0" friction="0.0"/>  
+	    </joint>
+      
+      
+    
+      
+        <joint name="leg11_left_joint" type="fixed">
+ 		  <child link="leg11_left_link"/>
+ 		  <parent link="leg10_left_link"/>
+          <origin rpy="0.0 1.570796 3.141592" xyz="-0.02 0.044 -0.02"/>
+		  <axis xyz="0 0 1"/>
+		  <limit effort="1.2748" velocity="2.083"/>
+          <joint_properties damping="0.0" friction="0.0"/>  
+	    </joint>
+      
+      
+    
+      
+        <joint name="leg12_left_joint" type="continuous">
+ 		  <child link="leg12_left_link"/>
+ 		  <parent link="leg11_left_link"/>
+          <origin rpy="0.0 0.0 1.570796" xyz="0.0 0.0 0.00"/>
+		  <axis xyz="0 0 1"/>
+		  <limit effort="1.2748" velocity="2.083"/>
+          <joint_properties damping="0.0" friction="0.0"/>  
+	    </joint>
+      
+      
+    
+      
+        <joint name="leg13_left_joint" type="fixed">
+ 		  <child link="leg13_left_link"/>
+ 		  <parent link="leg12_left_link"/>
+          <origin rpy="0.0 1.570796 0.0" xyz="-0.016 -0.01 -0.018"/>
+		  <axis xyz="0 0 1"/>
+		  <limit effort="1.2748" velocity="2.083"/>
+          <joint_properties damping="0.0" friction="0.0"/>  
+	    </joint>
+      
+      
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+        <joint name="leg0_right_joint" type="fixed">
+ 		  <child link="leg0_right_link"/>
+ 		  <parent link="chassis_center_link"/>
+          <origin rpy="-1.570796 0.0 1.570796" xyz="-0.018 0.0 -0.033"/>
+		  <axis xyz="0 0 1"/>
+		  <limit effort="1.2748" velocity="2.083"/>
+          <joint_properties damping="0.0" friction="0.0"/>  
+	    </joint>
+      
+      
+    
+      
+        <joint name="leg1_right_joint" type="continuous">
+ 		  <child link="leg1_right_link"/>
+ 		  <parent link="leg0_right_link"/>
+          <origin rpy="0.0 0.0 1.570796" xyz="0.0 0.0 0.0"/>
+		  <axis xyz="0 0 1"/>
+		  <limit effort="1.2748" velocity="2.083"/>
+          <joint_properties damping="0.0" friction="0.0"/>  
+	    </joint>
+      
+      
+    
+      
+        <joint name="leg2_right_joint" type="fixed">
+ 		  <child link="leg2_right_link"/>
+ 		  <parent link="leg1_right_link"/>
+          <origin rpy="-1.570796 3.141592 0.0" xyz="0.000 0.022 -0.017"/>
+		  <axis xyz="0 0 1"/>
+		  <limit effort="1.2748" velocity="2.083"/>
+          <joint_properties damping="0.0" friction="0.0"/>  
+	    </joint>
+      
+      
+    
+      
+        <joint name="leg3_right_joint" type="fixed">
+ 		  <child link="leg3_right_link"/>
+ 		  <parent link="leg2_right_link"/>
+          <origin rpy="0.0 1.570796 0.0" xyz="0.018 0.010 0.016"/>
+		  <axis xyz="0 0 1"/>
+		  <limit effort="1.2748" velocity="2.083"/>
+          <joint_properties damping="0.0" friction="0.0"/>  
+	    </joint>
+      
+      
+    
+      
+        <joint name="leg4_right_joint" type="continuous">
+ 		  <child link="leg4_right_link"/>
+ 		  <parent link="leg3_right_link"/>
+          <origin rpy="0.0 0.0 1.570796" xyz="0.0 0.0 0.0"/>
+		  <axis xyz="0 0 1"/>
+		  <limit effort="1.2748" velocity="2.083"/>
+          <joint_properties damping="0.0" friction="0.0"/>  
+	    </joint>
+      
+      
+    
+      
+        <joint name="leg5_right_joint" type="fixed">
+ 		  <child link="leg5_right_link"/>
+ 		  <parent link="leg4_right_link"/>
+          <origin rpy="0.0 1.570796 1.570796" xyz="0.00 0.022 -0.017"/>
+		  <axis xyz="0 0 1"/>
+		  <limit effort="1.2748" velocity="2.083"/>
+          <joint_properties damping="0.0" friction="0.0"/>  
+	    </joint>
+      
+      
+    
+      
+        <joint name="leg6_right_joint" type="fixed">
+ 		  <child link="leg6_right_link"/>
+ 		  <parent link="leg5_right_link"/>
+          <origin rpy="1.570796 0.0 -1.570796" xyz="-0.018 0.00 0.038"/>
+		  <axis xyz="0 0 1"/>
+		  <limit effort="1.2748" velocity="2.083"/>
+          <joint_properties damping="0.0" friction="0.0"/>  
+	    </joint>
+      
+      
+    
+      
+        <joint name="leg7_right_joint" type="continuous">
+ 		  <child link="leg7_right_link"/>
+ 		  <parent link="leg6_right_link"/>
+          <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+		  <axis xyz="0 0 1"/>
+		  <limit effort="1.2748" velocity="2.083"/>
+          <joint_properties damping="0.0" friction="0.0"/>  
+	    </joint>
+      
+      
+    
+      
+        <joint name="leg8_right_joint" type="fixed">
+ 		  <child link="leg8_right_link"/>
+ 		  <parent link="leg7_right_link"/>
+          <origin rpy="0.0 1.570796 1.570796" xyz="0.00 0.022 -0.017"/>
+		  <axis xyz="0 0 1"/>
+		  <limit effort="1.2748" velocity="2.083"/>
+          <joint_properties damping="0.0" friction="0.0"/>  
+	    </joint>
+      
+      
+    
+      
+        <joint name="leg9_right_joint" type="fixed">
+ 		  <child link="leg9_right_link"/>
+ 		  <parent link="leg8_right_link"/>
+          <origin rpy="1.570796 0.0 -1.570796" xyz="-0.018 0.00 0.038"/>
+		  <axis xyz="0 0 1"/>
+		  <limit effort="1.2748" velocity="2.083"/>
+          <joint_properties damping="0.0" friction="0.0"/>  
+	    </joint>
+      
+      
+    
+      
+        <joint name="leg10_right_joint" type="continuous">
+ 		  <child link="leg10_right_link"/>
+ 		  <parent link="leg9_right_link"/>
+          <origin rpy="0.0 0.0 0.0" xyz="0.0 0.00 0.00"/>
+		  <axis xyz="0 0 1"/>
+		  <limit effort="1.2748" velocity="2.083"/>
+          <joint_properties damping="0.0" friction="0.0"/>  
+	    </joint>
+      
+      
+    
+      
+        <joint name="leg11_right_joint" type="fixed">
+ 		  <child link="leg11_right_link"/>
+ 		  <parent link="leg10_right_link"/>
+          <origin rpy="0.0 1.570796 3.141592" xyz="-0.02 0.044 -0.02"/>
+		  <axis xyz="0 0 1"/>
+		  <limit effort="1.2748" velocity="2.083"/>
+          <joint_properties damping="0.0" friction="0.0"/>  
+	    </joint>
+      
+      
+    
+      
+        <joint name="leg12_right_joint" type="continuous">
+ 		  <child link="leg12_right_link"/>
+ 		  <parent link="leg11_right_link"/>
+          <origin rpy="0.0 0.0 1.570796" xyz="0.0 0.0 0.00"/>
+		  <axis xyz="0 0 1"/>
+		  <limit effort="1.2748" velocity="2.083"/>
+          <joint_properties damping="0.0" friction="0.0"/>  
+	    </joint>
+      
+      
+    
+      
+        <joint name="leg13_right_joint" type="fixed">
+ 		  <child link="leg13_right_link"/>
+ 		  <parent link="leg12_right_link"/>
+          <origin rpy="0.0 1.570796 0.0" xyz="-0.016 -0.01 -0.018"/>
+		  <axis xyz="0 0 1"/>
+		  <limit effort="1.2748" velocity="2.083"/>
+          <joint_properties damping="0.0" friction="0.0"/>  
+	    </joint>
+      
+      
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+        <joint name="arm0_left_joint" type="fixed">
+ 		  <child link="arm0_left_link"/>
+ 		  <parent link="chassis_center_link"/>
+          <origin rpy="0.0 0.0 0.0" xyz="-0.001 0.102 0.0682"/>
+		  <axis xyz="0 0 1"/>
+		  <limit effort="1.2748" velocity="2.083"/>
+          <joint_properties damping="0.0" friction="0.0"/>  
+	    </joint>
+      
+      
+    
+      
+        <joint name="arm1_left_joint" type="continuous">
+ 		  <child link="arm1_left_link"/>
+ 		  <parent link="arm0_left_link"/>
+          <origin rpy="3.141592 0.0 1.570796" xyz="0.0 0.0 0.009"/>
+		  <axis xyz="0 0 1"/>
+		  <limit effort="1.2748" velocity="2.083"/>
+          <joint_properties damping="0.0" friction="0.0"/>  
+	    </joint>
+      
+      
+    
+      
+        <joint name="arm2_left_joint" type="fixed">
+ 		  <child link="arm2_left_link"/>
+ 		  <parent link="arm1_left_link"/>
+          <origin rpy="1.570796 0.0 0.0" xyz="0.0 -0.0169 -0.022"/>
+		  <axis xyz="0 0 1"/>
+		  <limit effort="1.2748" velocity="2.083"/>
+          <joint_properties damping="0.0" friction="0.0"/>  
+	    </joint>
+      
+      
+    
+      
+        <joint name="arm3_left_joint" type="continuous">
+ 		  <child link="arm3_left_link"/>
+ 		  <parent link="arm2_left_link"/>
+          <origin rpy="0.0 0.0 -1.570796" xyz="0.0 0.0 0.00"/>
+		  <axis xyz="0 0 1"/>
+		  <limit effort="1.2748" velocity="2.083"/>
+          <joint_properties damping="0.0" friction="0.0"/>  
+	    </joint>
+      
+      
+    
+      
+        <joint name="arm4_left_joint" type="fixed">
+ 		  <child link="arm4_left_link"/>
+ 		  <parent link="arm3_left_link"/>
+          <origin rpy="0.0 1.570796 1.570796" xyz="0.00 -0.038 -0.018"/>
+		  <axis xyz="0 0 1"/>
+		  <limit effort="1.2748" velocity="2.083"/>
+          <joint_properties damping="0.0" friction="0.0"/>  
+	    </joint>
+      
+      
+    
+      
+        <joint name="arm5_left_joint" type="fixed">
+ 		  <child link="arm5_left_link"/>
+ 		  <parent link="arm4_left_link"/>
+          <origin rpy="0.0 3.141592 0.0" xyz="0.00 0.00 0.00"/>
+		  <axis xyz="0 0 1"/>
+		  <limit effort="1.2748" velocity="2.083"/>
+          <joint_properties damping="0.0" friction="0.0"/>  
+	    </joint>
+      
+      
+    
+      
+        <joint name="arm6_left_joint" type="fixed">
+ 		  <child link="arm6_left_link"/>
+ 		  <parent link="arm5_left_link"/>
+          <origin rpy="1.570796 0.0 1.570796" xyz="0.018 0.0 0.038"/>
+		  <axis xyz="0 0 1"/>
+		  <limit effort="1.2748" velocity="2.083"/>
+          <joint_properties damping="0.0" friction="0.0"/>  
+	    </joint>
+      
+      
+    
+      
+        <joint name="arm7_left_joint" type="continuous">
+ 		  <child link="arm7_left_link"/>
+ 		  <parent link="arm6_left_link"/>
+          <origin rpy="0.0 0.0 0.0" xyz="0.0 0.00 0.00"/>
+		  <axis xyz="0 0 1"/>
+		  <limit effort="1.2748" velocity="2.083"/>
+          <joint_properties damping="0.0" friction="0.0"/>  
+	    </joint>
+      
+      
+    
+      
+        <joint name="arm8_left_joint" type="fixed">
+ 		  <child link="arm8_left_link"/>
+ 		  <parent link="arm7_left_link"/>
+          <origin rpy="0.0 1.570796 1.570796" xyz="0.0 0.022 -0.017"/>
+		  <axis xyz="0 0 1"/>
+		  <limit effort="1.2748" velocity="2.083"/>
+          <joint_properties damping="0.0" friction="0.0"/>  
+	    </joint>
+      
+      
+    
+      
+        <joint name="cam0_left_joint" type="fixed">
+ 		  <child link="cam0_left_link"/>
+ 		  <parent link="arm8_left_link"/>
+          <origin rpy="1.570796 0.0 0.0" xyz="0.0 0.01 0.0"/>
+		  <axis xyz="0 0 1"/>
+		  <limit effort="1.2748" velocity="2.083"/>
+          <joint_properties damping="0.0" friction="0.0"/>  
+	    </joint>
+      
+      
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+        <joint name="arm0_right_joint" type="fixed">
+ 		  <child link="arm0_right_link"/>
+ 		  <parent link="chassis_center_link"/>
+          <origin rpy="0.0 3.141592 0.0" xyz="-0.001 0.102 -0.0682"/>
+		  <axis xyz="0 0 1"/>
+		  <limit effort="1.2748" velocity="2.083"/>
+          <joint_properties damping="0.0" friction="0.0"/>  
+	    </joint>
+      
+      
+    
+      
+        <joint name="arm1_right_joint" type="continuous">
+ 		  <child link="arm1_right_link"/>
+ 		  <parent link="arm0_right_link"/>
+          <origin rpy="3.141592 0.0 1.570796" xyz="0.0 0.0 0.009"/>
+		  <axis xyz="0 0 1"/>
+		  <limit effort="1.2748" velocity="2.083"/>
+          <joint_properties damping="0.0" friction="0.0"/>  
+	    </joint>
+      
+      
+    
+      
+        <joint name="arm2_right_joint" type="fixed">
+ 		  <child link="arm2_right_link"/>
+ 		  <parent link="arm1_right_link"/>
+          <origin rpy="1.570796 0.0 0.0" xyz="0.0 -0.0169 -0.022"/>
+		  <axis xyz="0 0 1"/>
+		  <limit effort="1.2748" velocity="2.083"/>
+          <joint_properties damping="0.0" friction="0.0"/>  
+	    </joint>
+      
+      
+    
+      
+        <joint name="arm3_right_joint" type="continuous">
+ 		  <child link="arm3_right_link"/>
+ 		  <parent link="arm2_right_link"/>
+          <origin rpy="0.0 0.0 -1.570796" xyz="0.0 0.0 0.00"/>
+		  <axis xyz="0 0 1"/>
+		  <limit effort="1.2748" velocity="2.083"/>
+          <joint_properties damping="0.0" friction="0.0"/>  
+	    </joint>
+      
+      
+    
+      
+        <joint name="arm4_right_joint" type="fixed">
+ 		  <child link="arm4_right_link"/>
+ 		  <parent link="arm3_right_link"/>
+          <origin rpy="0.0 1.570796 1.570796" xyz="0.00 -0.038 -0.018"/>
+		  <axis xyz="0 0 1"/>
+		  <limit effort="1.2748" velocity="2.083"/>
+          <joint_properties damping="0.0" friction="0.0"/>  
+	    </joint>
+      
+      
+    
+      
+        <joint name="arm5_right_joint" type="fixed">
+ 		  <child link="arm5_right_link"/>
+ 		  <parent link="arm4_right_link"/>
+          <origin rpy="0.0 3.141592 0.0" xyz="0.00 0.00 0.00"/>
+		  <axis xyz="0 0 1"/>
+		  <limit effort="1.2748" velocity="2.083"/>
+          <joint_properties damping="0.0" friction="0.0"/>  
+	    </joint>
+      
+      
+    
+      
+        <joint name="arm6_right_joint" type="fixed">
+ 		  <child link="arm6_right_link"/>
+ 		  <parent link="arm5_right_link"/>
+          <origin rpy="1.570796 0.0 1.570796" xyz="0.018 0.0 0.038"/>
+		  <axis xyz="0 0 1"/>
+		  <limit effort="1.2748" velocity="2.083"/>
+          <joint_properties damping="0.0" friction="0.0"/>  
+	    </joint>
+      
+      
+    
+      
+        <joint name="arm7_right_joint" type="continuous">
+ 		  <child link="arm7_right_link"/>
+ 		  <parent link="arm6_right_link"/>
+          <origin rpy="0.0 0.0 0.0" xyz="0.0 0.00 0.00"/>
+		  <axis xyz="0 0 1"/>
+		  <limit effort="1.2748" velocity="2.083"/>
+          <joint_properties damping="0.0" friction="0.0"/>  
+	    </joint>
+      
+      
+    
+      
+        <joint name="arm8_right_joint" type="fixed">
+ 		  <child link="arm8_right_link"/>
+ 		  <parent link="arm7_right_link"/>
+          <origin rpy="0.0 1.570796 1.570796" xyz="0.0 0.022 -0.017"/>
+		  <axis xyz="0 0 1"/>
+		  <limit effort="1.2748" velocity="2.083"/>
+          <joint_properties damping="0.0" friction="0.0"/>  
+	    </joint>
+      
+      
+    
+      
+        <joint name="cam0_right_joint" type="fixed">
+ 		  <child link="cam0_right_link"/>
+ 		  <parent link="arm8_right_link"/>
+          <origin rpy="1.570796 0.0 0.0" xyz="0.0 0.01 0.0"/>
+		  <axis xyz="0 0 1"/>
+		  <limit effort="1.2748" velocity="2.083"/>
+          <joint_properties damping="0.0" friction="0.0"/>  
+	    </joint>
+      
+      
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+</robot>

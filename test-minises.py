@@ -49,5 +49,5 @@ for i in range(STEPS):
 
 time_end = time.time()
 
-print("FPS = ", 4*N*N*STEPS / (time_end - time_start))
+print("FPS TOTAL = ", 4*N*N*STEPS / (time_end - time_start), "STEP = ", (time_end - time_start) * 1000 / STEPS, "ms")
 if PROFILE: p.stopStateLogging(logId)
