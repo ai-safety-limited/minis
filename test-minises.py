@@ -1,7 +1,7 @@
 import pybullet as p, os, sys, numpy as np, time
 
 print("***************** Please test FPS with p.DIRECT! **********************")
-N,STEPS,PROFILE,INTERFACE = 2,1000,True,p.DIRECT 
+N,STEPS,PROFILE,INTERFACE = 4,100,False,p.DIRECT 
 # N,STEPS,PROFILE,INTERFACE = 2,1000,True,p.DIRECT
 # N,STEPS,PROFILE,INTERFACE = 2,1000,False,p.DIRECT
 
@@ -18,8 +18,6 @@ p.setTimeStep(0.033)
 p.setPhysicsEngineParameter(numSolverIterations=32, numSubSteps=4)
 p.setPhysicsEngineParameter(enableConeFriction=0)
 
-
-plane = p.loadURDF("plane.urdf")
 p.loadURDF("plane.urdf",[0,0,0], useMaximalCoordinates=True)
 for x in range(-N, N):
     for y in range(-N, N):
