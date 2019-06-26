@@ -1,0 +1,79 @@
+<?xml version='1.0'?>
+<robot name="quadruped">
+    <material name="aluminum"><color rgba="0.8 0.8 0.8 1"/></material>
+    <material name="cardboard"><color rgba="0.68 0.5 0.3 1"/></material>
+    <material name="plastic"><color rgba="0.1 0.1 0.1 1"/></material>
+
+
+    {% for item in includes recursive %}
+
+    <link name='{{item.name}}_link'>
+      {% if item.mass %}
+      <inertial>
+        <origin rpy="{{item.cog_rpy}}" xyz="{{item.cog_xyz}}"/>
+	    <mass value="{{item.mass}}"/>
+        <inertia {{item.inertia}}/>
+      </inertial>
+      {% endif %}
+
+      {% if item.model %}
+	      <visual>
+	        <geometry><mesh filename="meshes/{{item.model}}.stl" scale="1 1 1"/></geometry>
+	        <material name="{{item.material}}"/>
+	      </visual>
+      {% else %}
+	      {% for box in item.boxes %}
+	       <visual>
+        	<origin rpy="{{box.rpy}}" xyz="{{box.xyz}}"/>
+	        <geometry><box size="{{box.size}}"/></geometry>
+	        <material name="{{item.material}}"/>
+	       </visual>
+          {% endfor %}
+	  {% endif %}
+	
+      {% if item.collision %}  
+       {% for box in item.boxes %}
+        <collision name='collision'>
+          <origin rpy="{{box.rpy}}" xyz="{{box.xyz}}"/>
+          <laser_retro>0</laser_retro>
+          <max_contacts>4</max_contacts>
+          <geometry><box size="{{box.size}}"/></geometry>
+        </collision>
+        {% endfor %}
+      {% endif %}
+
+      {% if sensor %}
+  	  <sensor name='sensor' type='camera'>
+	    <update_rate>3</update_rate>
+  	    <camera name='camera'>
+	    <horizontal_fov>0.523599</horizontal_fov>
+	    <image><width>640</width><height>480</height><format>R8G8B8</format></image>
+	    <clip><near>0.02</near><far>300</far></clip>
+	    <noise><type>gaussian</type><mean>0</mean><stddev>0.004</stddev></noise>
+	    </camera>
+	    <pose>0 0 0 0 -0 1.570796</pose>
+	  </sensor>
+      {% endif %}
+    </link>
+    
+    {{ loop(item.includes) }}
+    {% endfor %}
+
+
+
+    {% for item in includes recursive %}
+      {% if item.parent is defined %}
+        <joint name="{{item.name}}_joint" type="{{item.joint.type}}">
+ 		  <child link="{{item.name}}_link"/>
+ 		  <parent link="{{item.parent}}_link"/>
+          <origin rpy="{{item.rpy}}" xyz="{{item.xyz}}"/>
+		  <axis xyz="0 0 1"/>
+		  <limit effort="1.2748" velocity="2.083"/>
+          <joint_properties damping="0.0" friction="0.0"/>  
+	    </joint>
+      {% endif %}
+      
+    {{ loop(item.includes) }}
+    {% endfor %}
+
+</robot>

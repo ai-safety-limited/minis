@@ -17,141 +17,14 @@
       
 
       
-	      
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.020748 0.050843 0.000000"/>
-	        <geometry><box size="0.001500 0.121124 0.140800"/></geometry>
+	      <visual>
+	        <geometry><mesh filename="meshes/SR319-BODY.stl" scale="1 1 1"/></geometry>
 	        <material name="aluminum"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.010748 0.090805 -0.071171"/>
-	        <geometry><box size="0.021582 0.041282 0.001541"/></geometry>
-	        <material name="aluminum"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.013248 0.107384 -0.029229"/>
-	        <geometry><box size="0.016582 0.008041 0.001541"/></geometry>
-	        <material name="aluminum"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.013248 0.107384 0.029229"/>
-	        <geometry><box size="0.016582 0.008041 0.001541"/></geometry>
-	        <material name="aluminum"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.010748 0.090805 0.071171"/>
-	        <geometry><box size="0.021582 0.041282 0.001541"/></geometry>
-	        <material name="aluminum"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="-0.015491 0.107135 0.029229"/>
-	        <geometry><box size="0.016646 0.008309 0.001541"/></geometry>
-	        <material name="aluminum"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="-0.015491 0.107135 -0.029229"/>
-	        <geometry><box size="0.016646 0.008309 0.001541"/></geometry>
-	        <material name="aluminum"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="-0.012642 0.090540 0.071171"/>
-	        <geometry><box size="0.022344 0.041507 0.001541"/></geometry>
-	        <material name="aluminum"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="-0.012642 0.090540 -0.071171"/>
-	        <geometry><box size="0.022344 0.041507 0.001541"/></geometry>
-	        <material name="aluminum"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="-0.021884 0.050443 0.000000"/>
-	        <geometry><box size="0.003776 0.121130 0.140800"/></geometry>
-	        <material name="aluminum"/>
-	       </visual>
-          
-	  
+	      </visual>
+      
 	
         
        
-        <collision name='collision'>
-          <origin rpy="0 0 0" xyz="0.020748 0.050843 0.000000"/>
-          <laser_retro>0</laser_retro>
-          <max_contacts>4</max_contacts>
-          <geometry><box size="0.001500 0.121124 0.140800"/></geometry>
-        </collision>
-        
-        <collision name='collision'>
-          <origin rpy="0 0 0" xyz="0.010748 0.090805 -0.071171"/>
-          <laser_retro>0</laser_retro>
-          <max_contacts>4</max_contacts>
-          <geometry><box size="0.021582 0.041282 0.001541"/></geometry>
-        </collision>
-        
-        <collision name='collision'>
-          <origin rpy="0 0 0" xyz="0.013248 0.107384 -0.029229"/>
-          <laser_retro>0</laser_retro>
-          <max_contacts>4</max_contacts>
-          <geometry><box size="0.016582 0.008041 0.001541"/></geometry>
-        </collision>
-        
-        <collision name='collision'>
-          <origin rpy="0 0 0" xyz="0.013248 0.107384 0.029229"/>
-          <laser_retro>0</laser_retro>
-          <max_contacts>4</max_contacts>
-          <geometry><box size="0.016582 0.008041 0.001541"/></geometry>
-        </collision>
-        
-        <collision name='collision'>
-          <origin rpy="0 0 0" xyz="0.010748 0.090805 0.071171"/>
-          <laser_retro>0</laser_retro>
-          <max_contacts>4</max_contacts>
-          <geometry><box size="0.021582 0.041282 0.001541"/></geometry>
-        </collision>
-        
-        <collision name='collision'>
-          <origin rpy="0 0 0" xyz="-0.015491 0.107135 0.029229"/>
-          <laser_retro>0</laser_retro>
-          <max_contacts>4</max_contacts>
-          <geometry><box size="0.016646 0.008309 0.001541"/></geometry>
-        </collision>
-        
-        <collision name='collision'>
-          <origin rpy="0 0 0" xyz="-0.015491 0.107135 -0.029229"/>
-          <laser_retro>0</laser_retro>
-          <max_contacts>4</max_contacts>
-          <geometry><box size="0.016646 0.008309 0.001541"/></geometry>
-        </collision>
-        
-        <collision name='collision'>
-          <origin rpy="0 0 0" xyz="-0.012642 0.090540 0.071171"/>
-          <laser_retro>0</laser_retro>
-          <max_contacts>4</max_contacts>
-          <geometry><box size="0.022344 0.041507 0.001541"/></geometry>
-        </collision>
-        
-        <collision name='collision'>
-          <origin rpy="0 0 0" xyz="-0.012642 0.090540 -0.071171"/>
-          <laser_retro>0</laser_retro>
-          <max_contacts>4</max_contacts>
-          <geometry><box size="0.022344 0.041507 0.001541"/></geometry>
-        </collision>
-        
-        <collision name='collision'>
-          <origin rpy="0 0 0" xyz="-0.021884 0.050443 0.000000"/>
-          <laser_retro>0</laser_retro>
-          <max_contacts>4</max_contacts>
-          <geometry><box size="0.003776 0.121130 0.140800"/></geometry>
-        </collision>
-        
       
 
       
@@ -169,14 +42,11 @@
       
 
       
-	      
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.034536 0.023000 0.019000"/>
-	        <geometry><box size="0.069401 0.046000 0.040472"/></geometry>
+	      <visual>
+	        <geometry><mesh filename="meshes/SR319-BATTERY.stl" scale="1 1 1"/></geometry>
 	        <material name="plastic"/>
-	       </visual>
-          
-	  
+	      </visual>
+      
 	
       
 
@@ -196,26 +66,11 @@
       
 
       
-	      
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.000709"/>
-	        <geometry><box size="0.043365 0.020000 0.001582"/></geometry>
+	      <visual>
+	        <geometry><mesh filename="meshes/SR319-20x43.stl" scale="1 1 1"/></geometry>
 	        <material name="aluminum"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="-0.020850 0.000000 0.014099"/>
-	        <geometry><box size="0.001500 0.020395 0.025198"/></geometry>
-	        <material name="aluminum"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.020850 0.000000 0.014099"/>
-	        <geometry><box size="0.001500 0.020395 0.025198"/></geometry>
-	        <material name="aluminum"/>
-	       </visual>
-          
-	  
+	      </visual>
+      
 	
       
 
@@ -234,20 +89,11 @@
       
 
       
-	      
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.002250"/>
-	        <geometry><box size="0.021648 0.021648 0.004500"/></geometry>
+	      <visual>
+	        <geometry><mesh filename="meshes/SR319-SERVO-ROTOR.stl" scale="1 1 1"/></geometry>
 	        <material name="aluminum"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.000250"/>
-	        <geometry><box size="0.006494 0.006494 0.000500"/></geometry>
-	        <material name="aluminum"/>
-	       </visual>
-          
-	  
+	      </visual>
+      
 	
       
 
@@ -266,32 +112,11 @@
       
 
       
-	      
-	       <visual>
-        	<origin rpy="0 0 0" xyz="-0.000000 -0.010100 -0.017500"/>
-	        <geometry><box size="0.020132 0.040332 0.037000"/></geometry>
+	      <visual>
+	        <geometry><mesh filename="meshes/SR319-SERVO.stl" scale="1 1 1"/></geometry>
 	        <material name="plastic"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 -0.010100 0.001983"/>
-	        <geometry><box size="0.019818 0.040018 0.004034"/></geometry>
-	        <material name="plastic"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.004500"/>
-	        <geometry><box size="0.005412 0.005412 0.001000"/></geometry>
-	        <material name="plastic"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 -0.010100 -0.039771"/>
-	        <geometry><box size="0.019920 0.040120 0.007658"/></geometry>
-	        <material name="plastic"/>
-	       </visual>
-          
-	  
+	      </visual>
+      
 	
       
 
@@ -310,14 +135,11 @@
       
 
       
-	      
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 0.010393 0.015000"/>
-	        <geometry><box size="0.040659 0.031214 0.030049"/></geometry>
+	      <visual>
+	        <geometry><mesh filename="meshes/SR319-CAM.stl" scale="1 1 1"/></geometry>
 	        <material name="plastic"/>
-	       </visual>
-          
-	  
+	      </visual>
+      
 	
       
 
@@ -337,26 +159,11 @@
       
 
       
-	      
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 0.040000 0.000000"/>
-	        <geometry><box size="0.080330 0.080330 0.046330"/></geometry>
+	      <visual>
+	        <geometry><mesh filename="meshes/SR319-AIY.stl" scale="1 1 1"/></geometry>
 	        <material name="cardboard"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 0.082435 0.000000"/>
-	        <geometry><box size="0.030307 0.009130 0.030307"/></geometry>
-	        <material name="cardboard"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 0.050000 -0.022500"/>
-	        <geometry><box size="0.003903 0.003903 0.001000"/></geometry>
-	        <material name="cardboard"/>
-	       </visual>
-          
-	  
+	      </visual>
+      
 	
       
 
@@ -379,32 +186,11 @@
       
 
       
-	      
-	       <visual>
-        	<origin rpy="0 0 0" xyz="-0.000000 -0.010100 -0.017500"/>
-	        <geometry><box size="0.020132 0.040332 0.037000"/></geometry>
+	      <visual>
+	        <geometry><mesh filename="meshes/SR319-SERVO.stl" scale="1 1 1"/></geometry>
 	        <material name="plastic"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 -0.010100 0.001983"/>
-	        <geometry><box size="0.019818 0.040018 0.004034"/></geometry>
-	        <material name="plastic"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.004500"/>
-	        <geometry><box size="0.005412 0.005412 0.001000"/></geometry>
-	        <material name="plastic"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 -0.010100 -0.039771"/>
-	        <geometry><box size="0.019920 0.040120 0.007658"/></geometry>
-	        <material name="plastic"/>
-	       </visual>
-          
-	  
+	      </visual>
+      
 	
       
 
@@ -423,14 +209,11 @@
       
 
       
-	      
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000285 0.021262 -0.016756"/>
-	        <geometry><box size="0.020046 0.001565 0.043221"/></geometry>
+	      <visual>
+	        <geometry><mesh filename="meshes/SR319-20x55-ASSEMBLY.stl" scale="1 1 1"/></geometry>
 	        <material name="aluminum"/>
-	       </visual>
-          
-	  
+	      </visual>
+      
 	
       
 
@@ -449,26 +232,11 @@
       
 
       
-	      
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.000709"/>
-	        <geometry><box size="0.043365 0.040000 0.001582"/></geometry>
+	      <visual>
+	        <geometry><mesh filename="meshes/SR319-40x43.stl" scale="1 1 1"/></geometry>
 	        <material name="aluminum"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="-0.020850 0.000000 0.006099"/>
-	        <geometry><box size="0.001504 0.040395 0.009198"/></geometry>
-	        <material name="aluminum"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.020850 0.000000 0.006099"/>
-	        <geometry><box size="0.001504 0.040395 0.009198"/></geometry>
-	        <material name="aluminum"/>
-	       </visual>
-          
-	  
+	      </visual>
+      
 	
       
 
@@ -487,32 +255,11 @@
       
 
       
-	      
-	       <visual>
-        	<origin rpy="0 0 0" xyz="-0.000000 -0.010100 -0.017500"/>
-	        <geometry><box size="0.020132 0.040332 0.037000"/></geometry>
+	      <visual>
+	        <geometry><mesh filename="meshes/SR319-SERVO.stl" scale="1 1 1"/></geometry>
 	        <material name="plastic"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 -0.010100 0.001983"/>
-	        <geometry><box size="0.019818 0.040018 0.004034"/></geometry>
-	        <material name="plastic"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.004500"/>
-	        <geometry><box size="0.005412 0.005412 0.001000"/></geometry>
-	        <material name="plastic"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 -0.010100 -0.039771"/>
-	        <geometry><box size="0.019920 0.040120 0.007658"/></geometry>
-	        <material name="plastic"/>
-	       </visual>
-          
-	  
+	      </visual>
+      
 	
       
 
@@ -531,14 +278,11 @@
       
 
       
-	      
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000285 0.021262 -0.016756"/>
-	        <geometry><box size="0.020046 0.001565 0.043221"/></geometry>
+	      <visual>
+	        <geometry><mesh filename="meshes/SR319-20x55-ASSEMBLY.stl" scale="1 1 1"/></geometry>
 	        <material name="aluminum"/>
-	       </visual>
-          
-	  
+	      </visual>
+      
 	
       
 
@@ -557,26 +301,11 @@
       
 
       
-	      
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.000709"/>
-	        <geometry><box size="0.043365 0.020000 0.001582"/></geometry>
+	      <visual>
+	        <geometry><mesh filename="meshes/SR319-20x43.stl" scale="1 1 1"/></geometry>
 	        <material name="aluminum"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="-0.020850 0.000000 0.014099"/>
-	        <geometry><box size="0.001500 0.020395 0.025198"/></geometry>
-	        <material name="aluminum"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.020850 0.000000 0.014099"/>
-	        <geometry><box size="0.001500 0.020395 0.025198"/></geometry>
-	        <material name="aluminum"/>
-	       </visual>
-          
-	  
+	      </visual>
+      
 	
       
 
@@ -595,32 +324,11 @@
       
 
       
-	      
-	       <visual>
-        	<origin rpy="0 0 0" xyz="-0.000000 -0.010100 -0.017500"/>
-	        <geometry><box size="0.020132 0.040332 0.037000"/></geometry>
+	      <visual>
+	        <geometry><mesh filename="meshes/SR319-SERVO.stl" scale="1 1 1"/></geometry>
 	        <material name="plastic"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 -0.010100 0.001983"/>
-	        <geometry><box size="0.019818 0.040018 0.004034"/></geometry>
-	        <material name="plastic"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.004500"/>
-	        <geometry><box size="0.005412 0.005412 0.001000"/></geometry>
-	        <material name="plastic"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 -0.010100 -0.039771"/>
-	        <geometry><box size="0.019920 0.040120 0.007658"/></geometry>
-	        <material name="plastic"/>
-	       </visual>
-          
-	  
+	      </visual>
+      
 	
       
 
@@ -639,14 +347,11 @@
       
 
       
-	      
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000285 0.021262 -0.016756"/>
-	        <geometry><box size="0.020046 0.001565 0.043221"/></geometry>
+	      <visual>
+	        <geometry><mesh filename="meshes/SR319-20x55-ASSEMBLY.stl" scale="1 1 1"/></geometry>
 	        <material name="aluminum"/>
-	       </visual>
-          
-	  
+	      </visual>
+      
 	
       
 
@@ -665,26 +370,11 @@
       
 
       
-	      
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.000709"/>
-	        <geometry><box size="0.043365 0.020000 0.001582"/></geometry>
+	      <visual>
+	        <geometry><mesh filename="meshes/SR319-20x43.stl" scale="1 1 1"/></geometry>
 	        <material name="aluminum"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="-0.020850 0.000000 0.014099"/>
-	        <geometry><box size="0.001500 0.020395 0.025198"/></geometry>
-	        <material name="aluminum"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.020850 0.000000 0.014099"/>
-	        <geometry><box size="0.001500 0.020395 0.025198"/></geometry>
-	        <material name="aluminum"/>
-	       </visual>
-          
-	  
+	      </visual>
+      
 	
       
 
@@ -703,32 +393,11 @@
       
 
       
-	      
-	       <visual>
-        	<origin rpy="0 0 0" xyz="-0.000000 -0.010100 -0.017500"/>
-	        <geometry><box size="0.020132 0.040332 0.037000"/></geometry>
+	      <visual>
+	        <geometry><mesh filename="meshes/SR319-SERVO.stl" scale="1 1 1"/></geometry>
 	        <material name="plastic"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 -0.010100 0.001983"/>
-	        <geometry><box size="0.019818 0.040018 0.004034"/></geometry>
-	        <material name="plastic"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.004500"/>
-	        <geometry><box size="0.005412 0.005412 0.001000"/></geometry>
-	        <material name="plastic"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 -0.010100 -0.039771"/>
-	        <geometry><box size="0.019920 0.040120 0.007658"/></geometry>
-	        <material name="plastic"/>
-	       </visual>
-          
-	  
+	      </visual>
+      
 	
       
 
@@ -747,14 +416,11 @@
       
 
       
-	      
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000285 0.021262 -0.016756"/>
-	        <geometry><box size="0.020046 0.001565 0.043221"/></geometry>
+	      <visual>
+	        <geometry><mesh filename="meshes/SR319-20x55-ASSEMBLY.stl" scale="1 1 1"/></geometry>
 	        <material name="aluminum"/>
-	       </visual>
-          
-	  
+	      </visual>
+      
 	
       
 
@@ -773,14 +439,11 @@
       
 
       
-	      
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000285 0.021262 -0.016756"/>
-	        <geometry><box size="0.020046 0.001565 0.043221"/></geometry>
+	      <visual>
+	        <geometry><mesh filename="meshes/SR319-20x55-ASSEMBLY.stl" scale="1 1 1"/></geometry>
 	        <material name="aluminum"/>
-	       </visual>
-          
-	  
+	      </visual>
+      
 	
       
 
@@ -799,32 +462,11 @@
       
 
       
-	      
-	       <visual>
-        	<origin rpy="0 0 0" xyz="-0.000000 -0.010100 -0.017500"/>
-	        <geometry><box size="0.020132 0.040332 0.037000"/></geometry>
+	      <visual>
+	        <geometry><mesh filename="meshes/SR319-SERVO.stl" scale="1 1 1"/></geometry>
 	        <material name="plastic"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 -0.010100 0.001983"/>
-	        <geometry><box size="0.019818 0.040018 0.004034"/></geometry>
-	        <material name="plastic"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.004500"/>
-	        <geometry><box size="0.005412 0.005412 0.001000"/></geometry>
-	        <material name="plastic"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 -0.010100 -0.039771"/>
-	        <geometry><box size="0.019920 0.040120 0.007658"/></geometry>
-	        <material name="plastic"/>
-	       </visual>
-          
-	  
+	      </visual>
+      
 	
       
 
@@ -843,32 +485,11 @@
       
 
       
-	      
-	       <visual>
-        	<origin rpy="0 0 0" xyz="-0.020850 0.000000 0.009291"/>
-	        <geometry><box size="0.001534 0.048000 0.015582"/></geometry>
+	      <visual>
+	        <geometry><mesh filename="meshes/SR319-FEET.stl" scale="1 1 1"/></geometry>
 	        <material name="aluminum"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.020850 0.000000 0.009291"/>
-	        <geometry><box size="0.001515 0.048000 0.015582"/></geometry>
-	        <material name="aluminum"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="-0.000000 0.000203 0.000834"/>
-	        <geometry><box size="0.119989 0.073382 0.001832"/></geometry>
-	        <material name="aluminum"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="-0.000000 0.037191 0.006063"/>
-	        <geometry><box size="0.090330 0.001582 0.012290"/></geometry>
-	        <material name="aluminum"/>
-	       </visual>
-          
-	  
+	      </visual>
+      
 	
         
        
@@ -877,27 +498,6 @@
           <laser_retro>0</laser_retro>
           <max_contacts>4</max_contacts>
           <geometry><box size="0.001534 0.048000 0.015582"/></geometry>
-        </collision>
-        
-        <collision name='collision'>
-          <origin rpy="0 0 0" xyz="0.020850 0.000000 0.009291"/>
-          <laser_retro>0</laser_retro>
-          <max_contacts>4</max_contacts>
-          <geometry><box size="0.001515 0.048000 0.015582"/></geometry>
-        </collision>
-        
-        <collision name='collision'>
-          <origin rpy="0 0 0" xyz="-0.000000 0.000203 0.000834"/>
-          <laser_retro>0</laser_retro>
-          <max_contacts>4</max_contacts>
-          <geometry><box size="0.119989 0.073382 0.001832"/></geometry>
-        </collision>
-        
-        <collision name='collision'>
-          <origin rpy="0 0 0" xyz="-0.000000 0.037191 0.006063"/>
-          <laser_retro>0</laser_retro>
-          <max_contacts>4</max_contacts>
-          <geometry><box size="0.090330 0.001582 0.012290"/></geometry>
         </collision>
         
       
@@ -931,32 +531,11 @@
       
 
       
-	      
-	       <visual>
-        	<origin rpy="0 0 0" xyz="-0.000000 -0.010100 -0.017500"/>
-	        <geometry><box size="0.020132 0.040332 0.037000"/></geometry>
+	      <visual>
+	        <geometry><mesh filename="meshes/SR319-SERVO.stl" scale="1 1 1"/></geometry>
 	        <material name="plastic"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 -0.010100 0.001983"/>
-	        <geometry><box size="0.019818 0.040018 0.004034"/></geometry>
-	        <material name="plastic"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.004500"/>
-	        <geometry><box size="0.005412 0.005412 0.001000"/></geometry>
-	        <material name="plastic"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 -0.010100 -0.039771"/>
-	        <geometry><box size="0.019920 0.040120 0.007658"/></geometry>
-	        <material name="plastic"/>
-	       </visual>
-          
-	  
+	      </visual>
+      
 	
       
 
@@ -975,14 +554,11 @@
       
 
       
-	      
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000285 0.021262 -0.016756"/>
-	        <geometry><box size="0.020046 0.001565 0.043221"/></geometry>
+	      <visual>
+	        <geometry><mesh filename="meshes/SR319-20x55-ASSEMBLY.stl" scale="1 1 1"/></geometry>
 	        <material name="aluminum"/>
-	       </visual>
-          
-	  
+	      </visual>
+      
 	
       
 
@@ -1001,26 +577,11 @@
       
 
       
-	      
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.000709"/>
-	        <geometry><box size="0.043365 0.040000 0.001582"/></geometry>
+	      <visual>
+	        <geometry><mesh filename="meshes/SR319-40x43.stl" scale="1 1 1"/></geometry>
 	        <material name="aluminum"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="-0.020850 0.000000 0.006099"/>
-	        <geometry><box size="0.001504 0.040395 0.009198"/></geometry>
-	        <material name="aluminum"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.020850 0.000000 0.006099"/>
-	        <geometry><box size="0.001504 0.040395 0.009198"/></geometry>
-	        <material name="aluminum"/>
-	       </visual>
-          
-	  
+	      </visual>
+      
 	
       
 
@@ -1039,32 +600,11 @@
       
 
       
-	      
-	       <visual>
-        	<origin rpy="0 0 0" xyz="-0.000000 -0.010100 -0.017500"/>
-	        <geometry><box size="0.020132 0.040332 0.037000"/></geometry>
+	      <visual>
+	        <geometry><mesh filename="meshes/SR319-SERVO.stl" scale="1 1 1"/></geometry>
 	        <material name="plastic"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 -0.010100 0.001983"/>
-	        <geometry><box size="0.019818 0.040018 0.004034"/></geometry>
-	        <material name="plastic"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.004500"/>
-	        <geometry><box size="0.005412 0.005412 0.001000"/></geometry>
-	        <material name="plastic"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 -0.010100 -0.039771"/>
-	        <geometry><box size="0.019920 0.040120 0.007658"/></geometry>
-	        <material name="plastic"/>
-	       </visual>
-          
-	  
+	      </visual>
+      
 	
       
 
@@ -1083,14 +623,11 @@
       
 
       
-	      
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000285 0.021262 -0.016756"/>
-	        <geometry><box size="0.020046 0.001565 0.043221"/></geometry>
+	      <visual>
+	        <geometry><mesh filename="meshes/SR319-20x55-ASSEMBLY.stl" scale="1 1 1"/></geometry>
 	        <material name="aluminum"/>
-	       </visual>
-          
-	  
+	      </visual>
+      
 	
       
 
@@ -1109,26 +646,11 @@
       
 
       
-	      
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.000709"/>
-	        <geometry><box size="0.043365 0.020000 0.001582"/></geometry>
+	      <visual>
+	        <geometry><mesh filename="meshes/SR319-20x43.stl" scale="1 1 1"/></geometry>
 	        <material name="aluminum"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="-0.020850 0.000000 0.014099"/>
-	        <geometry><box size="0.001500 0.020395 0.025198"/></geometry>
-	        <material name="aluminum"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.020850 0.000000 0.014099"/>
-	        <geometry><box size="0.001500 0.020395 0.025198"/></geometry>
-	        <material name="aluminum"/>
-	       </visual>
-          
-	  
+	      </visual>
+      
 	
       
 
@@ -1147,32 +669,11 @@
       
 
       
-	      
-	       <visual>
-        	<origin rpy="0 0 0" xyz="-0.000000 -0.010100 -0.017500"/>
-	        <geometry><box size="0.020132 0.040332 0.037000"/></geometry>
+	      <visual>
+	        <geometry><mesh filename="meshes/SR319-SERVO.stl" scale="1 1 1"/></geometry>
 	        <material name="plastic"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 -0.010100 0.001983"/>
-	        <geometry><box size="0.019818 0.040018 0.004034"/></geometry>
-	        <material name="plastic"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.004500"/>
-	        <geometry><box size="0.005412 0.005412 0.001000"/></geometry>
-	        <material name="plastic"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 -0.010100 -0.039771"/>
-	        <geometry><box size="0.019920 0.040120 0.007658"/></geometry>
-	        <material name="plastic"/>
-	       </visual>
-          
-	  
+	      </visual>
+      
 	
       
 
@@ -1191,14 +692,11 @@
       
 
       
-	      
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000285 0.021262 -0.016756"/>
-	        <geometry><box size="0.020046 0.001565 0.043221"/></geometry>
+	      <visual>
+	        <geometry><mesh filename="meshes/SR319-20x55-ASSEMBLY.stl" scale="1 1 1"/></geometry>
 	        <material name="aluminum"/>
-	       </visual>
-          
-	  
+	      </visual>
+      
 	
       
 
@@ -1217,26 +715,11 @@
       
 
       
-	      
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.000709"/>
-	        <geometry><box size="0.043365 0.020000 0.001582"/></geometry>
+	      <visual>
+	        <geometry><mesh filename="meshes/SR319-20x43.stl" scale="1 1 1"/></geometry>
 	        <material name="aluminum"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="-0.020850 0.000000 0.014099"/>
-	        <geometry><box size="0.001500 0.020395 0.025198"/></geometry>
-	        <material name="aluminum"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.020850 0.000000 0.014099"/>
-	        <geometry><box size="0.001500 0.020395 0.025198"/></geometry>
-	        <material name="aluminum"/>
-	       </visual>
-          
-	  
+	      </visual>
+      
 	
       
 
@@ -1255,32 +738,11 @@
       
 
       
-	      
-	       <visual>
-        	<origin rpy="0 0 0" xyz="-0.000000 -0.010100 -0.017500"/>
-	        <geometry><box size="0.020132 0.040332 0.037000"/></geometry>
+	      <visual>
+	        <geometry><mesh filename="meshes/SR319-SERVO.stl" scale="1 1 1"/></geometry>
 	        <material name="plastic"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 -0.010100 0.001983"/>
-	        <geometry><box size="0.019818 0.040018 0.004034"/></geometry>
-	        <material name="plastic"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.004500"/>
-	        <geometry><box size="0.005412 0.005412 0.001000"/></geometry>
-	        <material name="plastic"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 -0.010100 -0.039771"/>
-	        <geometry><box size="0.019920 0.040120 0.007658"/></geometry>
-	        <material name="plastic"/>
-	       </visual>
-          
-	  
+	      </visual>
+      
 	
       
 
@@ -1299,14 +761,11 @@
       
 
       
-	      
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000285 0.021262 -0.016756"/>
-	        <geometry><box size="0.020046 0.001565 0.043221"/></geometry>
+	      <visual>
+	        <geometry><mesh filename="meshes/SR319-20x55-ASSEMBLY.stl" scale="1 1 1"/></geometry>
 	        <material name="aluminum"/>
-	       </visual>
-          
-	  
+	      </visual>
+      
 	
       
 
@@ -1325,14 +784,11 @@
       
 
       
-	      
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000285 0.021262 -0.016756"/>
-	        <geometry><box size="0.020046 0.001565 0.043221"/></geometry>
+	      <visual>
+	        <geometry><mesh filename="meshes/SR319-20x55-ASSEMBLY.stl" scale="1 1 1"/></geometry>
 	        <material name="aluminum"/>
-	       </visual>
-          
-	  
+	      </visual>
+      
 	
       
 
@@ -1351,32 +807,11 @@
       
 
       
-	      
-	       <visual>
-        	<origin rpy="0 0 0" xyz="-0.000000 -0.010100 -0.017500"/>
-	        <geometry><box size="0.020132 0.040332 0.037000"/></geometry>
+	      <visual>
+	        <geometry><mesh filename="meshes/SR319-SERVO.stl" scale="1 1 1"/></geometry>
 	        <material name="plastic"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 -0.010100 0.001983"/>
-	        <geometry><box size="0.019818 0.040018 0.004034"/></geometry>
-	        <material name="plastic"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.004500"/>
-	        <geometry><box size="0.005412 0.005412 0.001000"/></geometry>
-	        <material name="plastic"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 -0.010100 -0.039771"/>
-	        <geometry><box size="0.019920 0.040120 0.007658"/></geometry>
-	        <material name="plastic"/>
-	       </visual>
-          
-	  
+	      </visual>
+      
 	
       
 
@@ -1395,32 +830,11 @@
       
 
       
-	      
-	       <visual>
-        	<origin rpy="0 0 0" xyz="-0.020850 0.000000 0.009291"/>
-	        <geometry><box size="0.001534 0.048000 0.015582"/></geometry>
+	      <visual>
+	        <geometry><mesh filename="meshes/SR319-FEET.stl" scale="1 1 1"/></geometry>
 	        <material name="aluminum"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.020850 0.000000 0.009291"/>
-	        <geometry><box size="0.001515 0.048000 0.015582"/></geometry>
-	        <material name="aluminum"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="-0.000000 0.000203 0.000834"/>
-	        <geometry><box size="0.119989 0.073382 0.001832"/></geometry>
-	        <material name="aluminum"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="-0.000000 0.037191 0.006063"/>
-	        <geometry><box size="0.090330 0.001582 0.012290"/></geometry>
-	        <material name="aluminum"/>
-	       </visual>
-          
-	  
+	      </visual>
+      
 	
         
        
@@ -1429,27 +843,6 @@
           <laser_retro>0</laser_retro>
           <max_contacts>4</max_contacts>
           <geometry><box size="0.001534 0.048000 0.015582"/></geometry>
-        </collision>
-        
-        <collision name='collision'>
-          <origin rpy="0 0 0" xyz="0.020850 0.000000 0.009291"/>
-          <laser_retro>0</laser_retro>
-          <max_contacts>4</max_contacts>
-          <geometry><box size="0.001515 0.048000 0.015582"/></geometry>
-        </collision>
-        
-        <collision name='collision'>
-          <origin rpy="0 0 0" xyz="-0.000000 0.000203 0.000834"/>
-          <laser_retro>0</laser_retro>
-          <max_contacts>4</max_contacts>
-          <geometry><box size="0.119989 0.073382 0.001832"/></geometry>
-        </collision>
-        
-        <collision name='collision'>
-          <origin rpy="0 0 0" xyz="-0.000000 0.037191 0.006063"/>
-          <laser_retro>0</laser_retro>
-          <max_contacts>4</max_contacts>
-          <geometry><box size="0.090330 0.001582 0.012290"/></geometry>
         </collision>
         
       
@@ -1483,32 +876,11 @@
       
 
       
-	      
-	       <visual>
-        	<origin rpy="0 0 0" xyz="-0.000000 -0.010100 -0.017500"/>
-	        <geometry><box size="0.020132 0.040332 0.037000"/></geometry>
+	      <visual>
+	        <geometry><mesh filename="meshes/SR319-SERVO.stl" scale="1 1 1"/></geometry>
 	        <material name="plastic"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 -0.010100 0.001983"/>
-	        <geometry><box size="0.019818 0.040018 0.004034"/></geometry>
-	        <material name="plastic"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.004500"/>
-	        <geometry><box size="0.005412 0.005412 0.001000"/></geometry>
-	        <material name="plastic"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 -0.010100 -0.039771"/>
-	        <geometry><box size="0.019920 0.040120 0.007658"/></geometry>
-	        <material name="plastic"/>
-	       </visual>
-          
-	  
+	      </visual>
+      
 	
       
 
@@ -1527,20 +899,11 @@
       
 
       
-	      
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.002250"/>
-	        <geometry><box size="0.021648 0.021648 0.004500"/></geometry>
+	      <visual>
+	        <geometry><mesh filename="meshes/SR319-SERVO-ROTOR.stl" scale="1 1 1"/></geometry>
 	        <material name="aluminum"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.000250"/>
-	        <geometry><box size="0.006494 0.006494 0.000500"/></geometry>
-	        <material name="aluminum"/>
-	       </visual>
-          
-	  
+	      </visual>
+      
 	
       
 
@@ -1559,14 +922,11 @@
       
 
       
-	      
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000285 0.021262 -0.016756"/>
-	        <geometry><box size="0.020046 0.001565 0.043221"/></geometry>
+	      <visual>
+	        <geometry><mesh filename="meshes/SR319-20x55-ASSEMBLY.stl" scale="1 1 1"/></geometry>
 	        <material name="aluminum"/>
-	       </visual>
-          
-	  
+	      </visual>
+      
 	
       
 
@@ -1585,32 +945,11 @@
       
 
       
-	      
-	       <visual>
-        	<origin rpy="0 0 0" xyz="-0.000000 -0.010100 -0.017500"/>
-	        <geometry><box size="0.020132 0.040332 0.037000"/></geometry>
+	      <visual>
+	        <geometry><mesh filename="meshes/SR319-SERVO.stl" scale="1 1 1"/></geometry>
 	        <material name="plastic"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 -0.010100 0.001983"/>
-	        <geometry><box size="0.019818 0.040018 0.004034"/></geometry>
-	        <material name="plastic"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.004500"/>
-	        <geometry><box size="0.005412 0.005412 0.001000"/></geometry>
-	        <material name="plastic"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 -0.010100 -0.039771"/>
-	        <geometry><box size="0.019920 0.040120 0.007658"/></geometry>
-	        <material name="plastic"/>
-	       </visual>
-          
-	  
+	      </visual>
+      
 	
       
 
@@ -1629,26 +968,11 @@
       
 
       
-	      
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.000709"/>
-	        <geometry><box size="0.043365 0.020000 0.001582"/></geometry>
+	      <visual>
+	        <geometry><mesh filename="meshes/SR319-20x43.stl" scale="1 1 1"/></geometry>
 	        <material name="aluminum"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="-0.020850 0.000000 0.014099"/>
-	        <geometry><box size="0.001500 0.020395 0.025198"/></geometry>
-	        <material name="aluminum"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.020850 0.000000 0.014099"/>
-	        <geometry><box size="0.001500 0.020395 0.025198"/></geometry>
-	        <material name="aluminum"/>
-	       </visual>
-          
-	  
+	      </visual>
+      
 	
       
 
@@ -1667,26 +991,11 @@
       
 
       
-	      
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.000709"/>
-	        <geometry><box size="0.043365 0.020000 0.001582"/></geometry>
+	      <visual>
+	        <geometry><mesh filename="meshes/SR319-20x43.stl" scale="1 1 1"/></geometry>
 	        <material name="aluminum"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="-0.020850 0.000000 0.014099"/>
-	        <geometry><box size="0.001500 0.020395 0.025198"/></geometry>
-	        <material name="aluminum"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.020850 0.000000 0.014099"/>
-	        <geometry><box size="0.001500 0.020395 0.025198"/></geometry>
-	        <material name="aluminum"/>
-	       </visual>
-          
-	  
+	      </visual>
+      
 	
       
 
@@ -1705,32 +1014,11 @@
       
 
       
-	      
-	       <visual>
-        	<origin rpy="0 0 0" xyz="-0.000000 -0.010100 -0.017500"/>
-	        <geometry><box size="0.020132 0.040332 0.037000"/></geometry>
+	      <visual>
+	        <geometry><mesh filename="meshes/SR319-SERVO.stl" scale="1 1 1"/></geometry>
 	        <material name="plastic"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 -0.010100 0.001983"/>
-	        <geometry><box size="0.019818 0.040018 0.004034"/></geometry>
-	        <material name="plastic"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.004500"/>
-	        <geometry><box size="0.005412 0.005412 0.001000"/></geometry>
-	        <material name="plastic"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 -0.010100 -0.039771"/>
-	        <geometry><box size="0.019920 0.040120 0.007658"/></geometry>
-	        <material name="plastic"/>
-	       </visual>
-          
-	  
+	      </visual>
+      
 	
       
 
@@ -1749,14 +1037,11 @@
       
 
       
-	      
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000285 0.021262 -0.016756"/>
-	        <geometry><box size="0.020046 0.001565 0.043221"/></geometry>
+	      <visual>
+	        <geometry><mesh filename="meshes/SR319-20x55-ASSEMBLY.stl" scale="1 1 1"/></geometry>
 	        <material name="aluminum"/>
-	       </visual>
-          
-	  
+	      </visual>
+      
 	
       
 
@@ -1775,20 +1060,11 @@
       
 
       
-	      
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.000750"/>
-	        <geometry><box size="0.040165 0.020165 0.001500"/></geometry>
+	      <visual>
+	        <geometry><mesh filename="meshes/SR319-HOE.stl" scale="1 1 1"/></geometry>
 	        <material name="aluminum"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="-0.000000 0.005737 0.030157"/>
-	        <geometry><box size="0.035000 0.011690 0.060479"/></geometry>
-	        <material name="aluminum"/>
-	       </visual>
-          
-	  
+	      </visual>
+      
 	
         
        
@@ -1797,13 +1073,6 @@
           <laser_retro>0</laser_retro>
           <max_contacts>4</max_contacts>
           <geometry><box size="0.040165 0.020165 0.001500"/></geometry>
-        </collision>
-        
-        <collision name='collision'>
-          <origin rpy="0 0 0" xyz="-0.000000 0.005737 0.030157"/>
-          <laser_retro>0</laser_retro>
-          <max_contacts>4</max_contacts>
-          <geometry><box size="0.035000 0.011690 0.060479"/></geometry>
         </collision>
         
       
@@ -1823,14 +1092,11 @@
       
 
       
-	      
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 0.010393 0.015000"/>
-	        <geometry><box size="0.040659 0.031214 0.030049"/></geometry>
+	      <visual>
+	        <geometry><mesh filename="meshes/SR319-CAM.stl" scale="1 1 1"/></geometry>
 	        <material name="plastic"/>
-	       </visual>
-          
-	  
+	      </visual>
+      
 	
       
 
@@ -1859,32 +1125,11 @@
       
 
       
-	      
-	       <visual>
-        	<origin rpy="0 0 0" xyz="-0.000000 -0.010100 -0.017500"/>
-	        <geometry><box size="0.020132 0.040332 0.037000"/></geometry>
+	      <visual>
+	        <geometry><mesh filename="meshes/SR319-SERVO.stl" scale="1 1 1"/></geometry>
 	        <material name="plastic"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 -0.010100 0.001983"/>
-	        <geometry><box size="0.019818 0.040018 0.004034"/></geometry>
-	        <material name="plastic"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.004500"/>
-	        <geometry><box size="0.005412 0.005412 0.001000"/></geometry>
-	        <material name="plastic"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 -0.010100 -0.039771"/>
-	        <geometry><box size="0.019920 0.040120 0.007658"/></geometry>
-	        <material name="plastic"/>
-	       </visual>
-          
-	  
+	      </visual>
+      
 	
       
 
@@ -1903,20 +1148,11 @@
       
 
       
-	      
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.002250"/>
-	        <geometry><box size="0.021648 0.021648 0.004500"/></geometry>
+	      <visual>
+	        <geometry><mesh filename="meshes/SR319-SERVO-ROTOR.stl" scale="1 1 1"/></geometry>
 	        <material name="aluminum"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.000250"/>
-	        <geometry><box size="0.006494 0.006494 0.000500"/></geometry>
-	        <material name="aluminum"/>
-	       </visual>
-          
-	  
+	      </visual>
+      
 	
       
 
@@ -1935,14 +1171,11 @@
       
 
       
-	      
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000285 0.021262 -0.016756"/>
-	        <geometry><box size="0.020046 0.001565 0.043221"/></geometry>
+	      <visual>
+	        <geometry><mesh filename="meshes/SR319-20x55-ASSEMBLY.stl" scale="1 1 1"/></geometry>
 	        <material name="aluminum"/>
-	       </visual>
-          
-	  
+	      </visual>
+      
 	
       
 
@@ -1961,32 +1194,11 @@
       
 
       
-	      
-	       <visual>
-        	<origin rpy="0 0 0" xyz="-0.000000 -0.010100 -0.017500"/>
-	        <geometry><box size="0.020132 0.040332 0.037000"/></geometry>
+	      <visual>
+	        <geometry><mesh filename="meshes/SR319-SERVO.stl" scale="1 1 1"/></geometry>
 	        <material name="plastic"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 -0.010100 0.001983"/>
-	        <geometry><box size="0.019818 0.040018 0.004034"/></geometry>
-	        <material name="plastic"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.004500"/>
-	        <geometry><box size="0.005412 0.005412 0.001000"/></geometry>
-	        <material name="plastic"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 -0.010100 -0.039771"/>
-	        <geometry><box size="0.019920 0.040120 0.007658"/></geometry>
-	        <material name="plastic"/>
-	       </visual>
-          
-	  
+	      </visual>
+      
 	
       
 
@@ -2005,26 +1217,11 @@
       
 
       
-	      
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.000709"/>
-	        <geometry><box size="0.043365 0.020000 0.001582"/></geometry>
+	      <visual>
+	        <geometry><mesh filename="meshes/SR319-20x43.stl" scale="1 1 1"/></geometry>
 	        <material name="aluminum"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="-0.020850 0.000000 0.014099"/>
-	        <geometry><box size="0.001500 0.020395 0.025198"/></geometry>
-	        <material name="aluminum"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.020850 0.000000 0.014099"/>
-	        <geometry><box size="0.001500 0.020395 0.025198"/></geometry>
-	        <material name="aluminum"/>
-	       </visual>
-          
-	  
+	      </visual>
+      
 	
       
 
@@ -2043,26 +1240,11 @@
       
 
       
-	      
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.000709"/>
-	        <geometry><box size="0.043365 0.020000 0.001582"/></geometry>
+	      <visual>
+	        <geometry><mesh filename="meshes/SR319-20x43.stl" scale="1 1 1"/></geometry>
 	        <material name="aluminum"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="-0.020850 0.000000 0.014099"/>
-	        <geometry><box size="0.001500 0.020395 0.025198"/></geometry>
-	        <material name="aluminum"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.020850 0.000000 0.014099"/>
-	        <geometry><box size="0.001500 0.020395 0.025198"/></geometry>
-	        <material name="aluminum"/>
-	       </visual>
-          
-	  
+	      </visual>
+      
 	
       
 
@@ -2081,32 +1263,11 @@
       
 
       
-	      
-	       <visual>
-        	<origin rpy="0 0 0" xyz="-0.000000 -0.010100 -0.017500"/>
-	        <geometry><box size="0.020132 0.040332 0.037000"/></geometry>
+	      <visual>
+	        <geometry><mesh filename="meshes/SR319-SERVO.stl" scale="1 1 1"/></geometry>
 	        <material name="plastic"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 -0.010100 0.001983"/>
-	        <geometry><box size="0.019818 0.040018 0.004034"/></geometry>
-	        <material name="plastic"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.004500"/>
-	        <geometry><box size="0.005412 0.005412 0.001000"/></geometry>
-	        <material name="plastic"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 -0.010100 -0.039771"/>
-	        <geometry><box size="0.019920 0.040120 0.007658"/></geometry>
-	        <material name="plastic"/>
-	       </visual>
-          
-	  
+	      </visual>
+      
 	
       
 
@@ -2125,14 +1286,11 @@
       
 
       
-	      
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000285 0.021262 -0.016756"/>
-	        <geometry><box size="0.020046 0.001565 0.043221"/></geometry>
+	      <visual>
+	        <geometry><mesh filename="meshes/SR319-20x55-ASSEMBLY.stl" scale="1 1 1"/></geometry>
 	        <material name="aluminum"/>
-	       </visual>
-          
-	  
+	      </visual>
+      
 	
       
 
@@ -2151,20 +1309,11 @@
       
 
       
-	      
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 0.000000 0.000750"/>
-	        <geometry><box size="0.040165 0.020165 0.001500"/></geometry>
+	      <visual>
+	        <geometry><mesh filename="meshes/SR319-HOE.stl" scale="1 1 1"/></geometry>
 	        <material name="aluminum"/>
-	       </visual>
-          
-	       <visual>
-        	<origin rpy="0 0 0" xyz="-0.000000 0.005737 0.030157"/>
-	        <geometry><box size="0.035000 0.011690 0.060479"/></geometry>
-	        <material name="aluminum"/>
-	       </visual>
-          
-	  
+	      </visual>
+      
 	
         
        
@@ -2173,13 +1322,6 @@
           <laser_retro>0</laser_retro>
           <max_contacts>4</max_contacts>
           <geometry><box size="0.040165 0.020165 0.001500"/></geometry>
-        </collision>
-        
-        <collision name='collision'>
-          <origin rpy="0 0 0" xyz="-0.000000 0.005737 0.030157"/>
-          <laser_retro>0</laser_retro>
-          <max_contacts>4</max_contacts>
-          <geometry><box size="0.035000 0.011690 0.060479"/></geometry>
         </collision>
         
       
@@ -2199,14 +1341,11 @@
       
 
       
-	      
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 0.010393 0.015000"/>
-	        <geometry><box size="0.040659 0.031214 0.030049"/></geometry>
+	      <visual>
+	        <geometry><mesh filename="meshes/SR319-CAM.stl" scale="1 1 1"/></geometry>
 	        <material name="plastic"/>
-	       </visual>
-          
-	  
+	      </visual>
+      
 	
       
 
