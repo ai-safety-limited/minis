@@ -25,6 +25,13 @@
 	
         
        
+        <collision name='collision'>
+          <origin rpy="0 0 0" xyz="0.020748 0.050843 0.000000"/>
+          <laser_retro>0</laser_retro>
+          <max_contacts>4</max_contacts>
+          <geometry><box size="0.001500 0.121124 0.140800"/></geometry>
+        </collision>
+        
       
 
       

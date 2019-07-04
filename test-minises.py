@@ -1,7 +1,7 @@
 import pybullet as p, os, sys, numpy as np, time
 
 print("***************** Please test FPS with p.DIRECT! **********************")
-N,STEPS,PROFILE,INTERFACE = 4,100,False,p.DIRECT 
+N,STEPS,PROFILE,INTERFACE = 4,100,False,p.GUI
 # N,STEPS,PROFILE,INTERFACE = 2,1000,True,p.DIRECT
 # N,STEPS,PROFILE,INTERFACE = 2,1000,False,p.DIRECT
 
