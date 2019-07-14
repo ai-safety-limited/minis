@@ -16,7 +16,7 @@
       </inertial>
       {% endif %}
 
-      {% if item.model %}
+      {% if item.model_MESH_RENDERING_DISABLED %}
 	      <visual>
 	        <geometry><mesh filename="meshes/{{item.model}}.stl" scale="1 1 1"/></geometry>
 	        <material name="{{item.material}}"/>

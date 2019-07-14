@@ -15,10 +15,12 @@ def boxes(filename):
 
     boxes = []
     # if name == "SR319-20x55-ASSEMBLY":  shapes = shapes[0].childShapes()[-3:-2]
-    if name == "SR319-SERVO":  shapes = shapes[1].childShapes()
-    elif name == "SR319-FEET":  shapes = shapes[0].childShapes()
-    elif name == "SR319-HOE":  shapes = shapes[0].childShapes()
-    elif name == "SR319-BODY":  shapes = shapes[0].childShapes()
+    if name == "SR319-SERVO":  shapes = [shape]
+    elif name == "SR319-FEET":  shapes = [shape]
+    elif name == "SR319-HOE":  shapes = [shape]
+    elif name == "SR319-BODY":  shapes = [shape]
+    elif name == "SR319-CAM":  shapes = [shape]
+    elif name == "SR319-AIY":  shapes = [shape]        
     else: shapes = []
 
     for c in shapes:
@@ -53,7 +55,7 @@ parts = {
         "SR319-20x43"       : { "mass": "0.008",   "count" : 8, "material" : "aluminum"},
         "SR319-20x55"       : { "mass": "0.008",   "count" : 14, "material" : "aluminum"},
         "SR319-40x43"       : { "mass": "0.009",   "count" : 2, "material" : "aluminum"},
-        "SR319-BODY"        : { "mass": "0.098",   "count" : 1, "material" : "aluminum", "collision" : "0"},
+        "SR319-BODY"        : { "mass": "0.098",   "count" : 1, "material" : "aluminum", "collision" : "1"},
         "SR319-BATTERY"     : { "mass": "0.210",   "count" : 1, "material" : "plastic"},
         "SR319-AIY"         : { "mass": "0.050",   "count" : 1, "material" : "cardboard"},    # FIXME, weight!
         "SR319-CAM-HOLDER"  : { "mass": "0.001",   "count" : 12, "material" : "plastic"},
