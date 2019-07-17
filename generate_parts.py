@@ -1,8 +1,9 @@
 #!/usr/bin/python
-import os, shutil, copy, random
+import os, shutil, copy, random, numpy as np, stl
 from jinja2 import FileSystemLoader, Environment
+from pytransform3d.transformations import transform_from, concat
+from pytransform3d.rotations import matrix_from_euler_xyz, euler_xyz_from_matrix
 from math import pi
-
 
 
 def boxes(filename):
@@ -55,16 +56,16 @@ parts = {
         "SR319-20x43"       : { "mass": "0.008",   "count" : 8, "material" : "aluminum"},
         "SR319-20x55"       : { "mass": "0.008",   "count" : 14, "material" : "aluminum"},
         "SR319-40x43"       : { "mass": "0.009",   "count" : 2, "material" : "aluminum"},
-        "SR319-BODY"        : { "mass": "0.098",   "count" : 1, "material" : "aluminum", "collision" : "1"},
+        "SR319-BODY"        : { "mass": "0.098",   "count" : 1, "material" : "aluminum"},
         "SR319-BATTERY"     : { "mass": "0.210",   "count" : 1, "material" : "plastic"},
         "SR319-AIY"         : { "mass": "0.050",   "count" : 1, "material" : "cardboard"},    # FIXME, weight!
         "SR319-CAM-HOLDER"  : { "mass": "0.001",   "count" : 12, "material" : "plastic"},
         "SR319-CAM"         : { "mass": "0.018",   "count" : 3, "material" : "plastic", "sensor" : "1"},
-        "SR319-FEET"        : { "mass": "0.029",   "count" : 2, "material" : "aluminum", "collision" : "1"},
+        "SR319-FEET"        : { "mass": "0.029",   "count" : 2, "material" : "aluminum"},
         "SR319-SERVO-ROTOR" : { "mass": "0.002",   "count" : 2, "material" : "aluminum"},
         "SR319-SERVO"       : { "mass": "0.058",   "count" : 16, "material" : "plastic"},
         "SR319-SERVO-WHEEL" : { "mass": "0.002",   "count" : 14, "material" : "aluminum"},
-        "SR319-HOE"         : { "mass": "0.01",    "count" : 2, "material" : "aluminum", "collision" : "1"},
+        "SR319-HOE"         : { "mass": "0.01",    "count" : 2, "material" : "aluminum"},
         "SR319-20x55-ASSEMBLY" : { "mass": "0.012",   "count" : 14, "material" : "aluminum"},
 }
 
@@ -96,7 +97,7 @@ leg_left = [
     {"model" : 'SR319-20x55-ASSEMBLY',"pose" : "0.0 0.00 0.00 0.0 0.0 0.0", "name" : "leg10", "joint" : {"type" : "continuous"}, "includes" : [
     {"model" : 'SR319-20x55-ASSEMBLY',"pose" : "-0.02 0.044 -0.02 0.0 1.570796 3.141592", "name" : "leg11", "includes" : [
     {"model" : 'SR319-SERVO',         "pose" : "0.0 0.0 0.00 0.0 0.0 1.570796", "name" : "leg12", "joint" : {"type" : "continuous"}, "includes" : [
-    {"model" : 'SR319-FEET',          "pose" : "-0.016 -0.01 -0.018 0.0 1.570796 0.0", "name" : "leg13", "includes" : []}
+    {"model" : 'SR319-FEET',          "pose" : "-0.016 -0.01 -0.018 0.0 1.570796 0.0", "name" : "leg13", "collision" : "1", "includes" : []}
     ]}]}]}]}]}]}]}]}]}]}]}]}]
 
 
@@ -114,7 +115,7 @@ leg_right = [
     {"model" : 'SR319-20x55-ASSEMBLY',"pose" : "0.0 0.00 0.00 0.0 0.0 0.0", "name" : "leg10", "joint" : {"type" : "continuous"}, "includes" : [
     {"model" : 'SR319-20x55-ASSEMBLY',"pose" : "-0.02 0.044 -0.02 0.0 1.570796 3.141592", "name" : "leg11", "includes" : [
     {"model" : 'SR319-SERVO',         "pose" : "0.0 0.0 0.00 0.0 0.0 1.570796", "name" : "leg12", "joint" : {"type" : "continuous"}, "includes" : [
-    {"model" : 'SR319-FEET',          "pose" : "-0.016 -0.01 -0.018 0.0 1.570796 0.0", "name" : "leg13", "includes" : []}
+    {"model" : 'SR319-FEET',          "pose" : "-0.016 -0.01 -0.018 0.0 1.570796 0.0", "name" : "leg13", "collision" : "1", "includes" : []}
     ]}]}]}]}]}]}]}]}]}]}]}]}]
 
 
@@ -122,28 +123,28 @@ arm = [
     #{"model" : 'SR319-SERVO',         "pose" : "0.0 0.0 0.0 0.0 0.0 0.0", "name" : "arm0"}, "includes" : [
     {"model" : 'SR319-SERVO-ROTOR',   "pose" : "0.0 0.0 0.009 3.141592 0.0 1.570796", "name" : "arm1", "joint" : {"type" : "continuous"}, "includes" : [
     {"model" : 'SR319-20x55-ASSEMBLY',"pose" : "0.0 -0.0169 -0.022 1.570796 0.0 0.0", "name" : "arm2", "includes" : [
-    {"model" : 'SR319-SERVO',         "pose" : "0.0 0.0 0.00 0.0 0.0 -1.570796", "name" : "arm3", "modifier" : "R", "joint" : {"type" : "continuous"}, "includes" : [
+    {"model" : 'SR319-SERVO',         "pose" : "0.0 0.0 0.00 0.0 0.0 -1.570796", "name" : "arm3", "joint" : {"type" : "continuous"}, "includes" : [
     {"model" : 'SR319-20x43',         "pose" : "0.00 -0.038 -0.018 0.0 1.570796 1.570796", "name" : "arm4", "includes" : [
     {"model" : 'SR319-20x43',         "pose" : "0.00 0.00 0.00 0.0 3.141592 0.0", "name" : "arm5", "includes" : [
     {"model" : 'SR319-SERVO',         "pose" : "0.018 0.0 0.038 1.570796 0.0 1.570796", "name" : "arm6", "includes" : [
     {"model" : 'SR319-20x55-ASSEMBLY',"pose" : "0.0 0.00 0.00 0.0 0.0 0.0", "name" : "arm7", "joint" : {"type" : "continuous"}, "includes" : [
-    {"model" : 'SR319-HOE',           "pose" : "0.0 0.022 -0.017 0.0 1.570796 1.570796", "name" : "arm8", "includes" : [
+    {"model" : 'SR319-HOE',           "pose" : "0.0 0.022 -0.017 0.0 1.570796 1.570796", "name" : "arm8", "collision" : "1", "includes" : [
     {"model" : 'SR319-CAM',        "pose" : "0.0 0.01 0.0 1.570796 0.0 0.0", "name" : "cam0", "includes" : []}
     ]}]}]}]}]}]}]}]}]
 
 head = [
     #{"model" : 'SR319-SERVO',         "pose" : "0.0 0.0 0.0 0.0 0.0 0.0", "name" : "arm0"}, "includes" : [
     {"model" : 'SR319-SERVO-ROTOR',   "pose" : "0.0 0.0 0.0 0.0 3.141592 0.0", "name" : "head1", "includes" : [
-    {"model" : 'SR319-SERVO',         "pose" : "0.0 0.0 0.009 0.0 3.141592 -1.570796", "name" : "head2", "modifier" : "C", "joint" : {"type" : "continuous"}, "includes" : [
+    {"model" : 'SR319-SERVO',         "pose" : "0.0 0.0 0.009 0.0 3.141592 -1.570796", "name" : "head2", "joint" : {"type" : "continuous"}, "includes" : [
             {"model" : 'SR319-CAM',        "pose" : "0.0 0.04 -0.03 1.5 0.0 0.0", "name" : "cam0", "includes" : []},
-            {"model" : 'SR319-AIY',       "pose" : "0.0 0.00 -0.039 1.570796 3.141592 0.0", "name" : "aiy0", "includes" : []},
+            {"model" : 'SR319-AIY',       "pose" : "0.0 0.00 -0.039 1.570796 3.141592 0.0", "name" : "aiy0", "collision" : "1", "includes" : []},
 
         ]}
     ]}]
 
 
 # hack includes, because joints in Gazebo are broken, if they are not defined in the same model?
-bot =        [ {"model" : 'SR319-BODY', "pose" : "0.0 0.0 0.0 0.0 0.0 0.0", "name" : "chassis_center", "includes" : [
+bot =        [ {"model" : 'SR319-BODY', "pose" : "0.0 0.0 0.0 0.0 0.0 0.0", "name" : "chassis_center", "collision" : "1", "includes" : [
                {"model" : 'SR319-BATTERY', "pose" : "-0.02 0.011 0.035 0.0 1.570796 0.0", "name" : "battery", "includes" : []},
                {"model" : 'SR319-20x43',  "pose" : "-0.001 0.097 0.0 1.570796 0.0 0.0",          "name" : "head0", "position" : "center", "includes" : copy.deepcopy(head)},
 	           {"model" : 'SR319-SERVO',  "pose" : "0.018 0.0 0.033 1.570796 0.0 1.570796",    "name" : "leg0", "position" : "left", "includes" : copy.deepcopy(leg_left)},
@@ -155,7 +156,7 @@ bot =        [ {"model" : 'SR319-BODY', "pose" : "0.0 0.0 0.0 0.0 0.0 0.0", "nam
 # bot =        [ {"model" : 'SR319-BODY', "pose" : "0.0 0.0 0.0 0.0 0.0 0.0", "name" : "chassis_center", "includes" : []} ]
 
 
-def set_properties(item, name = None, position = None, modifier = None):
+def set_properties(item, name = None, position = None):
     """populates properties to includes. recursive call"""
     item.update(parts[item["model"]])  # add model properties
     if "joint" not in item: item["joint"] = {"type" : "fixed"}
@@ -169,32 +170,71 @@ def set_properties(item, name = None, position = None, modifier = None):
     for child in item["includes"]:
         set_properties(child, item["name"], child.get("position", position))
 
-def insert_cameras(parent):
-    """add cameras randomly to parent, recursive call"""
+def merge_fixed_links(parent):
+    """Merge fixed links"""
+
+    # if child doesn't have 'joint|collision' attributes, merge it to parent
+    #  * add child pose to grandchild
+    #  * add child position to grandchild
+    #  * add child includes to includes
+    #  * add child mesh to parent
+    #  * add child weight to parent
+    #  * remove child
+    merged = []
+
+    for child in parent["includes"]:                                # this is actually a recursion
+        if not "joint" in child and not 'collision' in child:
+            for grandchild in child["includes"]:
+                # calculate grandchild_to_parent transform (so we can remove 'child' link )
+                T = lambda pose: transform_from(matrix_from_euler_xyz(pose[3:]).T, pose[:3])
+                child_to_parent = T(np.fromstring(child['pose'], sep = ' '))
+                grandchild_to_child = T(np.fromstring(grandchild['pose'], sep = ' '))
+                grandchild_to_parent = concat(grandchild_to_child, child_to_parent)
+                pose = np.concatenate([grandchild_to_parent[:3, 3], euler_xyz_from_matrix(grandchild_to_parent[:3, :3].T)])
+                grandchild['pose'] = str(pose)[1:-1]
+
+                # save position (left/right) modifier to grandchild
+                if 'position' in child: grandchild['position'] = child['position']
+
+                # recourse into descendents
+                parent['includes'].append(grandchild)
+
+                merged.append((child['model'], child_to_parent))
+
+    if merged:
+        meshes = [stl.mesh.Mesh.from_file('meshes/%s.stl' % parent['model']).data]
+        for part, child_to_parent in merged:
+            mesh = stl.mesh.Mesh.from_file('meshes/%s.stl' % part)
+            mesh.transform(child_to_parent)     # ?? inverse?
+            meshes.append(mesh.data)
+
+        combined = stl.mesh.Mesh(np.concatenate(meshes))
+        name = parent['name'] + '_' + parent.get('position', '')
+        combined.save('meshes/%s.stl' % name, mode=stl.Mode.BINARY)
+
+        parts[name] = { "mass": "0.008",   "count" : 1, "material" : parts[parent['model']]['material']}
+        # TODO: fix mass, intertia, etc
+        #parent['model'] = name
+
+
+
+
+    # remove merged children
+    parent["includes"] = [child for child in parent["includes"] if "joint" in child or 'collision' in child]
+
+    # recourse into joints
     for child in parent["includes"]:
-        insert_cameras(child)
-
-    if random.random() < 0.1:
-        angle = "0.0 0.022 -0.017 0.0 %f %f" % (1.570796 + random.random() * 0.1, 1.570796 + random.random() * 0.1)
-        camera = {"model" : 'SR319-CAM',           "pose" : "" + angle, "name" : "camera", "includes" : [], "parent" : parent["model"]}
-        parent["includes"].append(camera)
+        merge_fixed_links(child)
 
 
-def merge_child(parent):
-    """Merged a fixed child link into parent by:
-      * recalculating parent's center of mass;
-      * recalculating parent's moment of inertia;
-      * adding adjusted child's collision shapes;
-      * adding adjusted child't visuals;
-      * adjusting grandchildren's coordinates;
-     """
-    pass
 
 # generate bot model
 name = "minis"
 data = {"name" : name, "includes" : bot, "joints" : []}
 
+
 for item in bot:
+    merge_fixed_links(item)
     set_properties(item)
     # collect_joints(item)      # rotating joints to  top level
     # insert_cameras(item)      # add cameras randomly

@@ -42,176 +42,6 @@
     
     
 
-    <link name='battery_link'>
-      
-      <inertial>
-        <origin rpy="0 0 0" xyz="0.032819 0.023000 0.019000"/>
-	    <mass value="0.210"/>
-        <inertia ixx="6.117623e-05" ixy="-3.585922e-12" ixz="-1.051232e-11" iyy="1.000286e-04" iyz="-6.929746e-12" izz="1.129124e-04"/>
-      </inertial>
-      
-
-      
-	      
-	  
-	
-      
-
-      
-    </link>
-    
-    
-    
-
-    <link name='head0_center_link'>
-      
-      <inertial>
-        <origin rpy="0 0 0" xyz="-0.000000 0.000009 0.007180"/>
-	    <mass value="0.008"/>
-        <inertia ixx="8.357953e-07" ixy="9.718290e-17" ixz="8.605056e-09" iyy="2.960480e-06" iyz="-1.207186e-09" izz="2.685580e-06"/>
-      </inertial>
-      
-
-      
-	      
-	  
-	
-      
-
-      
-    </link>
-    
-    
-
-    <link name='head1_center_link'>
-      
-      <inertial>
-        <origin rpy="0 0 0" xyz="-0.000000 -0.000000 0.001294"/>
-	    <mass value="0.002"/>
-        <inertia ixx="5.043949e-08" ixy="-3.062436e-14" ixz="-2.642094e-13" iyy="5.043971e-08" iyz="-1.711337e-16" izz="9.700972e-08"/>
-      </inertial>
-      
-
-      
-	      
-	  
-	
-      
-
-      
-    </link>
-    
-    
-
-    <link name='head2_center_link'>
-      
-      <inertial>
-        <origin rpy="0 0 0" xyz="0.000000 -0.009915 -0.018079"/>
-	    <mass value="0.058"/>
-        <inertia ixx="1.558414e-05" ixy="-1.729493e-10" ixz="-1.901327e-10" iyy="9.788826e-06" iyz="1.820135e-08" izz="9.495020e-06"/>
-      </inertial>
-      
-
-      
-	      
-	       <visual>
-        	<origin rpy="0 0 0" xyz="-0.000000 -0.010100 -0.019300"/>
-	        <geometry><box size="0.020132 0.040332 0.048600"/></geometry>
-	        <material name="plastic"/>
-	       </visual>
-          
-	  
-	
-      
-
-      
-    </link>
-    
-    
-
-    <link name='cam0_center_link'>
-      
-      <inertial>
-        <origin rpy="0 0 0" xyz="0.000002 0.009285 0.015049"/>
-	    <mass value="0.018"/>
-        <inertia ixx="1.864125e-06" ixy="7.858595e-11" ixz="-2.642526e-10" iyy="3.262842e-06" iyz="9.471758e-09" izz="2.668717e-06"/>
-      </inertial>
-      
-
-      
-	      
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 0.010393 0.015000"/>
-	        <geometry><box size="0.040659 0.031214 0.030049"/></geometry>
-	        <material name="plastic"/>
-	       </visual>
-          
-	  
-	
-      
-
-      
-    </link>
-    
-    
-    
-
-    <link name='aiy0_center_link'>
-      
-      <inertial>
-        <origin rpy="0 0 0" xyz="-0.000000 0.040452 0.000008"/>
-	    <mass value="0.050"/>
-        <inertia ixx="3.592418e-05" ixy="2.874626e-13" ixz="7.949236e-14" iyy="3.508779e-05" iyz="2.299236e-09" izz="5.357935e-05"/>
-      </inertial>
-      
-
-      
-	      
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 0.043418 0.000000"/>
-	        <geometry><box size="0.080330 0.087165 0.046330"/></geometry>
-	        <material name="cardboard"/>
-	       </visual>
-          
-	  
-	
-      
-
-      
-    </link>
-    
-    
-    
-    
-    
-    
-
-    <link name='leg0_left_link'>
-      
-      <inertial>
-        <origin rpy="0 0 0" xyz="0.000000 -0.009915 -0.018079"/>
-	    <mass value="0.058"/>
-        <inertia ixx="1.558414e-05" ixy="-1.729493e-10" ixz="-1.901327e-10" iyy="9.788826e-06" iyz="1.820135e-08" izz="9.495020e-06"/>
-      </inertial>
-      
-
-      
-	      
-	       <visual>
-        	<origin rpy="0 0 0" xyz="-0.000000 -0.010100 -0.019300"/>
-	        <geometry><box size="0.020132 0.040332 0.048600"/></geometry>
-	        <material name="plastic"/>
-	       </visual>
-          
-	  
-	
-      
-
-      
-    </link>
-    
-    
-
     <link name='leg1_left_link'>
       
       <inertial>
@@ -223,52 +53,6 @@
 
       
 	      
-	  
-	
-      
-
-      
-    </link>
-    
-    
-
-    <link name='leg2_left_link'>
-      
-      <inertial>
-        <origin rpy="0 0 0" xyz="-0.000036 -0.000072 0.002238"/>
-	    <mass value="0.009"/>
-        <inertia ixx="1.294746e-06" ixy="1.679879e-09" ixz="1.077743e-10" iyy="2.234025e-06" iyz="5.007505e-09" izz="3.396097e-06"/>
-      </inertial>
-      
-
-      
-	      
-	  
-	
-      
-
-      
-    </link>
-    
-    
-
-    <link name='leg3_left_link'>
-      
-      <inertial>
-        <origin rpy="0 0 0" xyz="0.000000 -0.009915 -0.018079"/>
-	    <mass value="0.058"/>
-        <inertia ixx="1.558414e-05" ixy="-1.729493e-10" ixz="-1.901327e-10" iyy="9.788826e-06" iyz="1.820135e-08" izz="9.495020e-06"/>
-      </inertial>
-      
-
-      
-	      
-	       <visual>
-        	<origin rpy="0 0 0" xyz="-0.000000 -0.010100 -0.019300"/>
-	        <geometry><box size="0.020132 0.040332 0.048600"/></geometry>
-	        <material name="plastic"/>
-	       </visual>
-          
 	  
 	
       
@@ -298,52 +82,6 @@
     
     
 
-    <link name='leg5_left_link'>
-      
-      <inertial>
-        <origin rpy="0 0 0" xyz="-0.000000 0.000009 0.007180"/>
-	    <mass value="0.008"/>
-        <inertia ixx="8.357953e-07" ixy="9.718290e-17" ixz="8.605056e-09" iyy="2.960480e-06" iyz="-1.207186e-09" izz="2.685580e-06"/>
-      </inertial>
-      
-
-      
-	      
-	  
-	
-      
-
-      
-    </link>
-    
-    
-
-    <link name='leg6_left_link'>
-      
-      <inertial>
-        <origin rpy="0 0 0" xyz="0.000000 -0.009915 -0.018079"/>
-	    <mass value="0.058"/>
-        <inertia ixx="1.558414e-05" ixy="-1.729493e-10" ixz="-1.901327e-10" iyy="9.788826e-06" iyz="1.820135e-08" izz="9.495020e-06"/>
-      </inertial>
-      
-
-      
-	      
-	       <visual>
-        	<origin rpy="0 0 0" xyz="-0.000000 -0.010100 -0.019300"/>
-	        <geometry><box size="0.020132 0.040332 0.048600"/></geometry>
-	        <material name="plastic"/>
-	       </visual>
-          
-	  
-	
-      
-
-      
-    </link>
-    
-    
-
     <link name='leg7_left_link'>
       
       <inertial>
@@ -364,73 +102,7 @@
     
     
 
-    <link name='leg8_left_link'>
-      
-      <inertial>
-        <origin rpy="0 0 0" xyz="-0.000000 0.000009 0.007180"/>
-	    <mass value="0.008"/>
-        <inertia ixx="8.357953e-07" ixy="9.718290e-17" ixz="8.605056e-09" iyy="2.960480e-06" iyz="-1.207186e-09" izz="2.685580e-06"/>
-      </inertial>
-      
-
-      
-	      
-	  
-	
-      
-
-      
-    </link>
-    
-    
-
-    <link name='leg9_left_link'>
-      
-      <inertial>
-        <origin rpy="0 0 0" xyz="0.000000 -0.009915 -0.018079"/>
-	    <mass value="0.058"/>
-        <inertia ixx="1.558414e-05" ixy="-1.729493e-10" ixz="-1.901327e-10" iyy="9.788826e-06" iyz="1.820135e-08" izz="9.495020e-06"/>
-      </inertial>
-      
-
-      
-	      
-	       <visual>
-        	<origin rpy="0 0 0" xyz="-0.000000 -0.010100 -0.019300"/>
-	        <geometry><box size="0.020132 0.040332 0.048600"/></geometry>
-	        <material name="plastic"/>
-	       </visual>
-          
-	  
-	
-      
-
-      
-    </link>
-    
-    
-
     <link name='leg10_left_link'>
-      
-      <inertial>
-        <origin rpy="0 0 0" xyz="0.000192 0.010581 -0.016353"/>
-	    <mass value="0.012"/>
-        <inertia ixx="7.129164e-06" ixy="-1.083228e-08" ixz="-4.791487e-09" iyy="6.357833e-06" iyz="4.792567e-08" izz="1.558394e-06"/>
-      </inertial>
-      
-
-      
-	      
-	  
-	
-      
-
-      
-    </link>
-    
-    
-
-    <link name='leg11_left_link'>
       
       <inertial>
         <origin rpy="0 0 0" xyz="0.000192 0.010581 -0.016353"/>
@@ -516,40 +188,6 @@
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-
-    <link name='leg0_right_link'>
-      
-      <inertial>
-        <origin rpy="0 0 0" xyz="0.000000 -0.009915 -0.018079"/>
-	    <mass value="0.058"/>
-        <inertia ixx="1.558414e-05" ixy="-1.729493e-10" ixz="-1.901327e-10" iyy="9.788826e-06" iyz="1.820135e-08" izz="9.495020e-06"/>
-      </inertial>
-      
-
-      
-	      
-	       <visual>
-        	<origin rpy="0 0 0" xyz="-0.000000 -0.010100 -0.019300"/>
-	        <geometry><box size="0.020132 0.040332 0.048600"/></geometry>
-	        <material name="plastic"/>
-	       </visual>
-          
-	  
-	
-      
-
-      
-    </link>
-    
-    
 
     <link name='leg1_right_link'>
       
@@ -562,52 +200,6 @@
 
       
 	      
-	  
-	
-      
-
-      
-    </link>
-    
-    
-
-    <link name='leg2_right_link'>
-      
-      <inertial>
-        <origin rpy="0 0 0" xyz="-0.000036 -0.000072 0.002238"/>
-	    <mass value="0.009"/>
-        <inertia ixx="1.294746e-06" ixy="1.679879e-09" ixz="1.077743e-10" iyy="2.234025e-06" iyz="5.007505e-09" izz="3.396097e-06"/>
-      </inertial>
-      
-
-      
-	      
-	  
-	
-      
-
-      
-    </link>
-    
-    
-
-    <link name='leg3_right_link'>
-      
-      <inertial>
-        <origin rpy="0 0 0" xyz="0.000000 -0.009915 -0.018079"/>
-	    <mass value="0.058"/>
-        <inertia ixx="1.558414e-05" ixy="-1.729493e-10" ixz="-1.901327e-10" iyy="9.788826e-06" iyz="1.820135e-08" izz="9.495020e-06"/>
-      </inertial>
-      
-
-      
-	      
-	       <visual>
-        	<origin rpy="0 0 0" xyz="-0.000000 -0.010100 -0.019300"/>
-	        <geometry><box size="0.020132 0.040332 0.048600"/></geometry>
-	        <material name="plastic"/>
-	       </visual>
-          
 	  
 	
       
@@ -637,52 +229,6 @@
     
     
 
-    <link name='leg5_right_link'>
-      
-      <inertial>
-        <origin rpy="0 0 0" xyz="-0.000000 0.000009 0.007180"/>
-	    <mass value="0.008"/>
-        <inertia ixx="8.357953e-07" ixy="9.718290e-17" ixz="8.605056e-09" iyy="2.960480e-06" iyz="-1.207186e-09" izz="2.685580e-06"/>
-      </inertial>
-      
-
-      
-	      
-	  
-	
-      
-
-      
-    </link>
-    
-    
-
-    <link name='leg6_right_link'>
-      
-      <inertial>
-        <origin rpy="0 0 0" xyz="0.000000 -0.009915 -0.018079"/>
-	    <mass value="0.058"/>
-        <inertia ixx="1.558414e-05" ixy="-1.729493e-10" ixz="-1.901327e-10" iyy="9.788826e-06" iyz="1.820135e-08" izz="9.495020e-06"/>
-      </inertial>
-      
-
-      
-	      
-	       <visual>
-        	<origin rpy="0 0 0" xyz="-0.000000 -0.010100 -0.019300"/>
-	        <geometry><box size="0.020132 0.040332 0.048600"/></geometry>
-	        <material name="plastic"/>
-	       </visual>
-          
-	  
-	
-      
-
-      
-    </link>
-    
-    
-
     <link name='leg7_right_link'>
       
       <inertial>
@@ -703,73 +249,7 @@
     
     
 
-    <link name='leg8_right_link'>
-      
-      <inertial>
-        <origin rpy="0 0 0" xyz="-0.000000 0.000009 0.007180"/>
-	    <mass value="0.008"/>
-        <inertia ixx="8.357953e-07" ixy="9.718290e-17" ixz="8.605056e-09" iyy="2.960480e-06" iyz="-1.207186e-09" izz="2.685580e-06"/>
-      </inertial>
-      
-
-      
-	      
-	  
-	
-      
-
-      
-    </link>
-    
-    
-
-    <link name='leg9_right_link'>
-      
-      <inertial>
-        <origin rpy="0 0 0" xyz="0.000000 -0.009915 -0.018079"/>
-	    <mass value="0.058"/>
-        <inertia ixx="1.558414e-05" ixy="-1.729493e-10" ixz="-1.901327e-10" iyy="9.788826e-06" iyz="1.820135e-08" izz="9.495020e-06"/>
-      </inertial>
-      
-
-      
-	      
-	       <visual>
-        	<origin rpy="0 0 0" xyz="-0.000000 -0.010100 -0.019300"/>
-	        <geometry><box size="0.020132 0.040332 0.048600"/></geometry>
-	        <material name="plastic"/>
-	       </visual>
-          
-	  
-	
-      
-
-      
-    </link>
-    
-    
-
     <link name='leg10_right_link'>
-      
-      <inertial>
-        <origin rpy="0 0 0" xyz="0.000192 0.010581 -0.016353"/>
-	    <mass value="0.012"/>
-        <inertia ixx="7.129164e-06" ixy="-1.083228e-08" ixz="-4.791487e-09" iyy="6.357833e-06" iyz="4.792567e-08" izz="1.558394e-06"/>
-      </inertial>
-      
-
-      
-	      
-	  
-	
-      
-
-      
-    </link>
-    
-    
-
-    <link name='leg11_right_link'>
       
       <inertial>
         <origin rpy="0 0 0" xyz="0.000192 0.010581 -0.016353"/>
@@ -855,40 +335,6 @@
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-
-    <link name='arm0_left_link'>
-      
-      <inertial>
-        <origin rpy="0 0 0" xyz="0.000000 -0.009915 -0.018079"/>
-	    <mass value="0.058"/>
-        <inertia ixx="1.558414e-05" ixy="-1.729493e-10" ixz="-1.901327e-10" iyy="9.788826e-06" iyz="1.820135e-08" izz="9.495020e-06"/>
-      </inertial>
-      
-
-      
-	      
-	       <visual>
-        	<origin rpy="0 0 0" xyz="-0.000000 -0.010100 -0.019300"/>
-	        <geometry><box size="0.020132 0.040332 0.048600"/></geometry>
-	        <material name="plastic"/>
-	       </visual>
-          
-	  
-	
-      
-
-      
-    </link>
-    
-    
 
     <link name='arm1_left_link'>
       
@@ -910,93 +356,7 @@
     
     
 
-    <link name='arm2_left_link'>
-      
-      <inertial>
-        <origin rpy="0 0 0" xyz="0.000192 0.010581 -0.016353"/>
-	    <mass value="0.012"/>
-        <inertia ixx="7.129164e-06" ixy="-1.083228e-08" ixz="-4.791487e-09" iyy="6.357833e-06" iyz="4.792567e-08" izz="1.558394e-06"/>
-      </inertial>
-      
-
-      
-	      
-	  
-	
-      
-
-      
-    </link>
-    
-    
-
     <link name='arm3_left_link'>
-      
-      <inertial>
-        <origin rpy="0 0 0" xyz="0.000000 -0.009915 -0.018079"/>
-	    <mass value="0.058"/>
-        <inertia ixx="1.558414e-05" ixy="-1.729493e-10" ixz="-1.901327e-10" iyy="9.788826e-06" iyz="1.820135e-08" izz="9.495020e-06"/>
-      </inertial>
-      
-
-      
-	      
-	       <visual>
-        	<origin rpy="0 0 0" xyz="-0.000000 -0.010100 -0.019300"/>
-	        <geometry><box size="0.020132 0.040332 0.048600"/></geometry>
-	        <material name="plastic"/>
-	       </visual>
-          
-	  
-	
-      
-
-      
-    </link>
-    
-    
-
-    <link name='arm4_left_link'>
-      
-      <inertial>
-        <origin rpy="0 0 0" xyz="-0.000000 0.000009 0.007180"/>
-	    <mass value="0.008"/>
-        <inertia ixx="8.357953e-07" ixy="9.718290e-17" ixz="8.605056e-09" iyy="2.960480e-06" iyz="-1.207186e-09" izz="2.685580e-06"/>
-      </inertial>
-      
-
-      
-	      
-	  
-	
-      
-
-      
-    </link>
-    
-    
-
-    <link name='arm5_left_link'>
-      
-      <inertial>
-        <origin rpy="0 0 0" xyz="-0.000000 0.000009 0.007180"/>
-	    <mass value="0.008"/>
-        <inertia ixx="8.357953e-07" ixy="9.718290e-17" ixz="8.605056e-09" iyy="2.960480e-06" iyz="-1.207186e-09" izz="2.685580e-06"/>
-      </inertial>
-      
-
-      
-	      
-	  
-	
-      
-
-      
-    </link>
-    
-    
-
-    <link name='arm6_left_link'>
       
       <inertial>
         <origin rpy="0 0 0" xyz="0.000000 -0.009915 -0.018079"/>
@@ -1076,66 +436,8 @@
     </link>
     
     
-
-    <link name='cam0_left_link'>
-      
-      <inertial>
-        <origin rpy="0 0 0" xyz="0.000002 0.009285 0.015049"/>
-	    <mass value="0.018"/>
-        <inertia ixx="1.864125e-06" ixy="7.858595e-11" ixz="-2.642526e-10" iyy="3.262842e-06" iyz="9.471758e-09" izz="2.668717e-06"/>
-      </inertial>
-      
-
-      
-	      
-	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 0.010393 0.015000"/>
-	        <geometry><box size="0.040659 0.031214 0.030049"/></geometry>
-	        <material name="plastic"/>
-	       </visual>
-          
-	  
-	
-      
-
-      
-    </link>
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-    <link name='arm0_right_link'>
-      
-      <inertial>
-        <origin rpy="0 0 0" xyz="0.000000 -0.009915 -0.018079"/>
-	    <mass value="0.058"/>
-        <inertia ixx="1.558414e-05" ixy="-1.729493e-10" ixz="-1.901327e-10" iyy="9.788826e-06" iyz="1.820135e-08" izz="9.495020e-06"/>
-      </inertial>
-      
-
-      
-	      
-	       <visual>
-        	<origin rpy="0 0 0" xyz="-0.000000 -0.010100 -0.019300"/>
-	        <geometry><box size="0.020132 0.040332 0.048600"/></geometry>
-	        <material name="plastic"/>
-	       </visual>
-          
-	  
-	
-      
-
-      
-    </link>
     
     
 
@@ -1159,93 +461,7 @@
     
     
 
-    <link name='arm2_right_link'>
-      
-      <inertial>
-        <origin rpy="0 0 0" xyz="0.000192 0.010581 -0.016353"/>
-	    <mass value="0.012"/>
-        <inertia ixx="7.129164e-06" ixy="-1.083228e-08" ixz="-4.791487e-09" iyy="6.357833e-06" iyz="4.792567e-08" izz="1.558394e-06"/>
-      </inertial>
-      
-
-      
-	      
-	  
-	
-      
-
-      
-    </link>
-    
-    
-
     <link name='arm3_right_link'>
-      
-      <inertial>
-        <origin rpy="0 0 0" xyz="0.000000 -0.009915 -0.018079"/>
-	    <mass value="0.058"/>
-        <inertia ixx="1.558414e-05" ixy="-1.729493e-10" ixz="-1.901327e-10" iyy="9.788826e-06" iyz="1.820135e-08" izz="9.495020e-06"/>
-      </inertial>
-      
-
-      
-	      
-	       <visual>
-        	<origin rpy="0 0 0" xyz="-0.000000 -0.010100 -0.019300"/>
-	        <geometry><box size="0.020132 0.040332 0.048600"/></geometry>
-	        <material name="plastic"/>
-	       </visual>
-          
-	  
-	
-      
-
-      
-    </link>
-    
-    
-
-    <link name='arm4_right_link'>
-      
-      <inertial>
-        <origin rpy="0 0 0" xyz="-0.000000 0.000009 0.007180"/>
-	    <mass value="0.008"/>
-        <inertia ixx="8.357953e-07" ixy="9.718290e-17" ixz="8.605056e-09" iyy="2.960480e-06" iyz="-1.207186e-09" izz="2.685580e-06"/>
-      </inertial>
-      
-
-      
-	      
-	  
-	
-      
-
-      
-    </link>
-    
-    
-
-    <link name='arm5_right_link'>
-      
-      <inertial>
-        <origin rpy="0 0 0" xyz="-0.000000 0.000009 0.007180"/>
-	    <mass value="0.008"/>
-        <inertia ixx="8.357953e-07" ixy="9.718290e-17" ixz="8.605056e-09" iyy="2.960480e-06" iyz="-1.207186e-09" izz="2.685580e-06"/>
-      </inertial>
-      
-
-      
-	      
-	  
-	
-      
-
-      
-    </link>
-    
-    
-
-    <link name='arm6_right_link'>
       
       <inertial>
         <origin rpy="0 0 0" xyz="0.000000 -0.009915 -0.018079"/>
@@ -1325,21 +541,25 @@
     </link>
     
     
+    
+    
+    
+    
 
-    <link name='cam0_right_link'>
+    <link name='head2_center_link'>
       
       <inertial>
-        <origin rpy="0 0 0" xyz="0.000002 0.009285 0.015049"/>
-	    <mass value="0.018"/>
-        <inertia ixx="1.864125e-06" ixy="7.858595e-11" ixz="-2.642526e-10" iyy="3.262842e-06" iyz="9.471758e-09" izz="2.668717e-06"/>
+        <origin rpy="0 0 0" xyz="0.000000 -0.009915 -0.018079"/>
+	    <mass value="0.058"/>
+        <inertia ixx="1.558414e-05" ixy="-1.729493e-10" ixz="-1.901327e-10" iyy="9.788826e-06" iyz="1.820135e-08" izz="9.495020e-06"/>
       </inertial>
       
 
       
 	      
 	       <visual>
-        	<origin rpy="0 0 0" xyz="0.000000 0.010393 0.015000"/>
-	        <geometry><box size="0.040659 0.031214 0.030049"/></geometry>
+        	<origin rpy="0 0 0" xyz="-0.000000 -0.010100 -0.019300"/>
+	        <geometry><box size="0.020132 0.040332 0.048600"/></geometry>
 	        <material name="plastic"/>
 	       </visual>
           
@@ -1351,12 +571,39 @@
     </link>
     
     
-    
-    
-    
-    
-    
-    
+
+    <link name='aiy0_center_link'>
+      
+      <inertial>
+        <origin rpy="0 0 0" xyz="-0.000000 0.040452 0.000008"/>
+	    <mass value="0.050"/>
+        <inertia ixx="3.592418e-05" ixy="2.874626e-13" ixz="7.949236e-14" iyy="3.508779e-05" iyz="2.299236e-09" izz="5.357935e-05"/>
+      </inertial>
+      
+
+      
+	      
+	       <visual>
+        	<origin rpy="0 0 0" xyz="0.000000 0.043418 0.000000"/>
+	        <geometry><box size="0.080330 0.087165 0.046330"/></geometry>
+	        <material name="cardboard"/>
+	       </visual>
+          
+	  
+	
+        
+       
+        <collision name='collision'>
+          <origin rpy="0 0 0" xyz="0.000000 0.043418 0.000000"/>
+          <laser_retro>0</laser_retro>
+          <max_contacts>4</max_contacts>
+          <geometry><box size="0.080330 0.087165 0.046330"/></geometry>
+        </collision>
+        
+      
+
+      
+    </link>
     
     
     
@@ -1366,128 +613,14 @@
 
 
     
-      
-      
-    
-      
-        <joint name="battery_joint" type="fixed">
- 		  <child link="battery_link"/>
- 		  <parent link="chassis_center_link"/>
-          <origin rpy="0.0 1.570796 0.0" xyz="-0.02 0.011 0.035"/>
-		  <axis xyz="0 0 1"/>
-		  <limit effort="1.2748" velocity="2.083"/>
-          <joint_properties damping="0.0" friction="0.0"/>  
-	    </joint>
-      
-      
-    
-    
-      
-        <joint name="head0_center_joint" type="fixed">
- 		  <child link="head0_center_link"/>
- 		  <parent link="chassis_center_link"/>
-          <origin rpy="1.570796 0.0 0.0" xyz="-0.001 0.097 0.0"/>
-		  <axis xyz="0 0 1"/>
-		  <limit effort="1.2748" velocity="2.083"/>
-          <joint_properties damping="0.0" friction="0.0"/>  
-	    </joint>
-      
-      
-    
-      
-        <joint name="head1_center_joint" type="fixed">
- 		  <child link="head1_center_link"/>
- 		  <parent link="head0_center_link"/>
-          <origin rpy="0.0 3.141592 0.0" xyz="0.0 0.0 0.0"/>
-		  <axis xyz="0 0 1"/>
-		  <limit effort="1.2748" velocity="2.083"/>
-          <joint_properties damping="0.0" friction="0.0"/>  
-	    </joint>
-      
-      
-    
-      
-        <joint name="head2_center_joint" type="continuous">
- 		  <child link="head2_center_link"/>
- 		  <parent link="head1_center_link"/>
-          <origin rpy="0.0 3.141592 -1.570796" xyz="0.0 0.0 0.009"/>
-		  <axis xyz="0 0 1"/>
-		  <limit effort="1.2748" velocity="2.083"/>
-          <joint_properties damping="0.0" friction="0.0"/>  
-	    </joint>
-      
-      
-    
-      
-        <joint name="cam0_center_joint" type="fixed">
- 		  <child link="cam0_center_link"/>
- 		  <parent link="head2_center_link"/>
-          <origin rpy="1.5 0.0 0.0" xyz="0.0 0.04 -0.03"/>
-		  <axis xyz="0 0 1"/>
-		  <limit effort="1.2748" velocity="2.083"/>
-          <joint_properties damping="0.0" friction="0.0"/>  
-	    </joint>
-      
-      
-    
-    
-      
-        <joint name="aiy0_center_joint" type="fixed">
- 		  <child link="aiy0_center_link"/>
- 		  <parent link="head2_center_link"/>
-          <origin rpy="1.570796 3.141592 0.0" xyz="0.0 0.00 -0.039"/>
-		  <axis xyz="0 0 1"/>
-		  <limit effort="1.2748" velocity="2.083"/>
-          <joint_properties damping="0.0" friction="0.0"/>  
-	    </joint>
-      
-      
-    
-    
-    
-    
-    
-      
-        <joint name="leg0_left_joint" type="fixed">
- 		  <child link="leg0_left_link"/>
- 		  <parent link="chassis_center_link"/>
-          <origin rpy="1.570796 0.0 1.570796" xyz="0.018 0.0 0.033"/>
-		  <axis xyz="0 0 1"/>
-		  <limit effort="1.2748" velocity="2.083"/>
-          <joint_properties damping="0.0" friction="0.0"/>  
-	    </joint>
       
       
     
       
         <joint name="leg1_left_joint" type="continuous">
  		  <child link="leg1_left_link"/>
- 		  <parent link="leg0_left_link"/>
-          <origin rpy="0.0 0.0 1.570796" xyz="0.0 0.0 0.0"/>
-		  <axis xyz="0 0 1"/>
-		  <limit effort="1.2748" velocity="2.083"/>
-          <joint_properties damping="0.0" friction="0.0"/>  
-	    </joint>
-      
-      
-    
-      
-        <joint name="leg2_left_joint" type="fixed">
- 		  <child link="leg2_left_link"/>
- 		  <parent link="leg1_left_link"/>
-          <origin rpy="-1.570796 0.0 0.0" xyz="0.000 0.022 -0.017"/>
-		  <axis xyz="0 0 1"/>
-		  <limit effort="1.2748" velocity="2.083"/>
-          <joint_properties damping="0.0" friction="0.0"/>  
-	    </joint>
-      
-      
-    
-      
-        <joint name="leg3_left_joint" type="fixed">
- 		  <child link="leg3_left_link"/>
- 		  <parent link="leg2_left_link"/>
-          <origin rpy="0.0 1.570796 0.0" xyz="0.018 0.010 0.016"/>
+ 		  <parent link="chassis_center_link"/>
+          <origin rpy="0.78539816 -1.57079586 2.35619416" xyz="0.018 0. 0.033"/>
 		  <axis xyz="0 0 1"/>
 		  <limit effort="1.2748" velocity="2.083"/>
           <joint_properties damping="0.0" friction="0.0"/>  
@@ -1498,32 +631,8 @@
       
         <joint name="leg4_left_joint" type="continuous">
  		  <child link="leg4_left_link"/>
- 		  <parent link="leg3_left_link"/>
-          <origin rpy="0.0 0.0 1.570796" xyz="0.0 0.0 0.0"/>
-		  <axis xyz="0 0 1"/>
-		  <limit effort="1.2748" velocity="2.083"/>
-          <joint_properties damping="0.0" friction="0.0"/>  
-	    </joint>
-      
-      
-    
-      
-        <joint name="leg5_left_joint" type="fixed">
- 		  <child link="leg5_left_link"/>
- 		  <parent link="leg4_left_link"/>
-          <origin rpy="0.0 1.570796 1.570796" xyz="0.00 0.022 -0.017"/>
-		  <axis xyz="0 0 1"/>
-		  <limit effort="1.2748" velocity="2.083"/>
-          <joint_properties damping="0.0" friction="0.0"/>  
-	    </joint>
-      
-      
-    
-      
-        <joint name="leg6_left_joint" type="fixed">
- 		  <child link="leg6_left_link"/>
- 		  <parent link="leg5_left_link"/>
-          <origin rpy="1.570796 0.0 1.570796" xyz="0.018 0.00 0.038"/>
+ 		  <parent link="leg1_left_link"/>
+          <origin rpy="-3.26794898e-07 1.57079633e+00 0.00000000e+00" xyz="1.80000000e-02 3.80000033e-02 -2.69999948e-02"/>
 		  <axis xyz="0 0 1"/>
 		  <limit effort="1.2748" velocity="2.083"/>
           <joint_properties damping="0.0" friction="0.0"/>  
@@ -1534,32 +643,8 @@
       
         <joint name="leg7_left_joint" type="continuous">
  		  <child link="leg7_left_link"/>
- 		  <parent link="leg6_left_link"/>
-          <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
-		  <axis xyz="0 0 1"/>
-		  <limit effort="1.2748" velocity="2.083"/>
-          <joint_properties damping="0.0" friction="0.0"/>  
-	    </joint>
-      
-      
-    
-      
-        <joint name="leg8_left_joint" type="fixed">
- 		  <child link="leg8_left_link"/>
- 		  <parent link="leg7_left_link"/>
-          <origin rpy="0.0 1.570796 1.570796" xyz="0.00 0.022 -0.017"/>
-		  <axis xyz="0 0 1"/>
-		  <limit effort="1.2748" velocity="2.083"/>
-          <joint_properties damping="0.0" friction="0.0"/>  
-	    </joint>
-      
-      
-    
-      
-        <joint name="leg9_left_joint" type="fixed">
- 		  <child link="leg9_left_link"/>
- 		  <parent link="leg8_left_link"/>
-          <origin rpy="1.570796 0.0 -1.570796" xyz="-0.018 0.00 0.038"/>
+ 		  <parent link="leg4_left_link"/>
+          <origin rpy="3.14159200e+00 3.26794897e-07 3.14159233e+00" xyz="1.24182080e-08 6.00000059e-02 -3.49999876e-02"/>
 		  <axis xyz="0 0 1"/>
 		  <limit effort="1.2748" velocity="2.083"/>
           <joint_properties damping="0.0" friction="0.0"/>  
@@ -1570,20 +655,8 @@
       
         <joint name="leg10_left_joint" type="continuous">
  		  <child link="leg10_left_link"/>
- 		  <parent link="leg9_left_link"/>
-          <origin rpy="0.0 0.0 0.0" xyz="0.0 0.00 0.00"/>
-		  <axis xyz="0 0 1"/>
-		  <limit effort="1.2748" velocity="2.083"/>
-          <joint_properties damping="0.0" friction="0.0"/>  
-	    </joint>
-      
-      
-    
-      
-        <joint name="leg11_left_joint" type="fixed">
- 		  <child link="leg11_left_link"/>
- 		  <parent link="leg10_left_link"/>
-          <origin rpy="0.0 1.570796 3.141592" xyz="-0.02 0.044 -0.02"/>
+ 		  <parent link="leg7_left_link"/>
+          <origin rpy="1.74886971e-20 3.26794897e-07 -3.26794790e-07" xyz="1.24182041e-08 5.99999941e-02 1.00001242e-03"/>
 		  <axis xyz="0 0 1"/>
 		  <limit effort="1.2748" velocity="2.083"/>
           <joint_properties damping="0.0" friction="0.0"/>  
@@ -1594,8 +667,8 @@
       
         <joint name="leg12_left_joint" type="continuous">
  		  <child link="leg12_left_link"/>
- 		  <parent link="leg11_left_link"/>
-          <origin rpy="0.0 0.0 1.570796" xyz="0.0 0.0 0.00"/>
+ 		  <parent link="leg10_left_link"/>
+          <origin rpy="1.57079600e+00 3.26794897e-07 -1.57079698e+00" xyz="-2.00000000e-02 4.40000000e-02 -2.00000000e-02"/>
 		  <axis xyz="0 0 1"/>
 		  <limit effort="1.2748" velocity="2.083"/>
           <joint_properties damping="0.0" friction="0.0"/>  
@@ -1621,55 +694,11 @@
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-      
-        <joint name="leg0_right_joint" type="fixed">
- 		  <child link="leg0_right_link"/>
- 		  <parent link="chassis_center_link"/>
-          <origin rpy="-1.570796 0.0 1.570796" xyz="-0.018 0.0 -0.033"/>
-		  <axis xyz="0 0 1"/>
-		  <limit effort="1.2748" velocity="2.083"/>
-          <joint_properties damping="0.0" friction="0.0"/>  
-	    </joint>
-      
-      
-    
       
         <joint name="leg1_right_joint" type="continuous">
  		  <child link="leg1_right_link"/>
- 		  <parent link="leg0_right_link"/>
-          <origin rpy="0.0 0.0 1.570796" xyz="0.0 0.0 0.0"/>
-		  <axis xyz="0 0 1"/>
-		  <limit effort="1.2748" velocity="2.083"/>
-          <joint_properties damping="0.0" friction="0.0"/>  
-	    </joint>
-      
-      
-    
-      
-        <joint name="leg2_right_joint" type="fixed">
- 		  <child link="leg2_right_link"/>
- 		  <parent link="leg1_right_link"/>
-          <origin rpy="-1.570796 3.141592 0.0" xyz="0.000 0.022 -0.017"/>
-		  <axis xyz="0 0 1"/>
-		  <limit effort="1.2748" velocity="2.083"/>
-          <joint_properties damping="0.0" friction="0.0"/>  
-	    </joint>
-      
-      
-    
-      
-        <joint name="leg3_right_joint" type="fixed">
- 		  <child link="leg3_right_link"/>
- 		  <parent link="leg2_right_link"/>
-          <origin rpy="0.0 1.570796 0.0" xyz="0.018 0.010 0.016"/>
+ 		  <parent link="chassis_center_link"/>
+          <origin rpy="-0.78539816 1.57079586 2.35619416" xyz="-0.018 0. -0.033"/>
 		  <axis xyz="0 0 1"/>
 		  <limit effort="1.2748" velocity="2.083"/>
           <joint_properties damping="0.0" friction="0.0"/>  
@@ -1680,32 +709,8 @@
       
         <joint name="leg4_right_joint" type="continuous">
  		  <child link="leg4_right_link"/>
- 		  <parent link="leg3_right_link"/>
-          <origin rpy="0.0 0.0 1.570796" xyz="0.0 0.0 0.0"/>
-		  <axis xyz="0 0 1"/>
-		  <limit effort="1.2748" velocity="2.083"/>
-          <joint_properties damping="0.0" friction="0.0"/>  
-	    </joint>
-      
-      
-    
-      
-        <joint name="leg5_right_joint" type="fixed">
- 		  <child link="leg5_right_link"/>
- 		  <parent link="leg4_right_link"/>
-          <origin rpy="0.0 1.570796 1.570796" xyz="0.00 0.022 -0.017"/>
-		  <axis xyz="0 0 1"/>
-		  <limit effort="1.2748" velocity="2.083"/>
-          <joint_properties damping="0.0" friction="0.0"/>  
-	    </joint>
-      
-      
-    
-      
-        <joint name="leg6_right_joint" type="fixed">
- 		  <child link="leg6_right_link"/>
- 		  <parent link="leg5_right_link"/>
-          <origin rpy="1.570796 0.0 -1.570796" xyz="-0.018 0.00 0.038"/>
+ 		  <parent link="leg1_right_link"/>
+          <origin rpy="3.14159233 -1.57079567 -3.14159265" xyz="-0.01800001 0.038 -0.00700002"/>
 		  <axis xyz="0 0 1"/>
 		  <limit effort="1.2748" velocity="2.083"/>
           <joint_properties damping="0.0" friction="0.0"/>  
@@ -1716,32 +721,8 @@
       
         <joint name="leg7_right_joint" type="continuous">
  		  <child link="leg7_right_link"/>
- 		  <parent link="leg6_right_link"/>
-          <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
-		  <axis xyz="0 0 1"/>
-		  <limit effort="1.2748" velocity="2.083"/>
-          <joint_properties damping="0.0" friction="0.0"/>  
-	    </joint>
-      
-      
-    
-      
-        <joint name="leg8_right_joint" type="fixed">
- 		  <child link="leg8_right_link"/>
- 		  <parent link="leg7_right_link"/>
-          <origin rpy="0.0 1.570796 1.570796" xyz="0.00 0.022 -0.017"/>
-		  <axis xyz="0 0 1"/>
-		  <limit effort="1.2748" velocity="2.083"/>
-          <joint_properties damping="0.0" friction="0.0"/>  
-	    </joint>
-      
-      
-    
-      
-        <joint name="leg9_right_joint" type="fixed">
- 		  <child link="leg9_right_link"/>
- 		  <parent link="leg8_right_link"/>
-          <origin rpy="1.570796 0.0 -1.570796" xyz="-0.018 0.00 0.038"/>
+ 		  <parent link="leg4_right_link"/>
+          <origin rpy="1.74886971e-20 3.26794897e-07 -3.26794790e-07" xyz="1.24182041e-08 5.99999941e-02 1.00001242e-03"/>
 		  <axis xyz="0 0 1"/>
 		  <limit effort="1.2748" velocity="2.083"/>
           <joint_properties damping="0.0" friction="0.0"/>  
@@ -1752,20 +733,8 @@
       
         <joint name="leg10_right_joint" type="continuous">
  		  <child link="leg10_right_link"/>
- 		  <parent link="leg9_right_link"/>
-          <origin rpy="0.0 0.0 0.0" xyz="0.0 0.00 0.00"/>
-		  <axis xyz="0 0 1"/>
-		  <limit effort="1.2748" velocity="2.083"/>
-          <joint_properties damping="0.0" friction="0.0"/>  
-	    </joint>
-      
-      
-    
-      
-        <joint name="leg11_right_joint" type="fixed">
- 		  <child link="leg11_right_link"/>
- 		  <parent link="leg10_right_link"/>
-          <origin rpy="0.0 1.570796 3.141592" xyz="-0.02 0.044 -0.02"/>
+ 		  <parent link="leg7_right_link"/>
+          <origin rpy="1.74886971e-20 3.26794897e-07 -3.26794790e-07" xyz="1.24182041e-08 5.99999941e-02 1.00001242e-03"/>
 		  <axis xyz="0 0 1"/>
 		  <limit effort="1.2748" velocity="2.083"/>
           <joint_properties damping="0.0" friction="0.0"/>  
@@ -1776,8 +745,8 @@
       
         <joint name="leg12_right_joint" type="continuous">
  		  <child link="leg12_right_link"/>
- 		  <parent link="leg11_right_link"/>
-          <origin rpy="0.0 0.0 1.570796" xyz="0.0 0.0 0.00"/>
+ 		  <parent link="leg10_right_link"/>
+          <origin rpy="1.57079600e+00 3.26794897e-07 -1.57079698e+00" xyz="-2.00000000e-02 4.40000000e-02 -2.00000000e-02"/>
 		  <axis xyz="0 0 1"/>
 		  <limit effort="1.2748" velocity="2.083"/>
           <joint_properties damping="0.0" friction="0.0"/>  
@@ -1803,43 +772,11 @@
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-      
-        <joint name="arm0_left_joint" type="fixed">
- 		  <child link="arm0_left_link"/>
- 		  <parent link="chassis_center_link"/>
-          <origin rpy="0.0 0.0 0.0" xyz="-0.001 0.102 0.0682"/>
-		  <axis xyz="0 0 1"/>
-		  <limit effort="1.2748" velocity="2.083"/>
-          <joint_properties damping="0.0" friction="0.0"/>  
-	    </joint>
-      
-      
-    
       
         <joint name="arm1_left_joint" type="continuous">
  		  <child link="arm1_left_link"/>
- 		  <parent link="arm0_left_link"/>
-          <origin rpy="3.141592 0.0 1.570796" xyz="0.0 0.0 0.009"/>
-		  <axis xyz="0 0 1"/>
-		  <limit effort="1.2748" velocity="2.083"/>
-          <joint_properties damping="0.0" friction="0.0"/>  
-	    </joint>
-      
-      
-    
-      
-        <joint name="arm2_left_joint" type="fixed">
- 		  <child link="arm2_left_link"/>
- 		  <parent link="arm1_left_link"/>
-          <origin rpy="1.570796 0.0 0.0" xyz="0.0 -0.0169 -0.022"/>
+ 		  <parent link="chassis_center_link"/>
+          <origin rpy="3.141592e+00 -0.000000e+00 1.570796e+00" xyz="-1.000000e-03 1.020000e-01 7.720000e-02"/>
 		  <axis xyz="0 0 1"/>
 		  <limit effort="1.2748" velocity="2.083"/>
           <joint_properties damping="0.0" friction="0.0"/>  
@@ -1850,44 +787,8 @@
       
         <joint name="arm3_left_joint" type="continuous">
  		  <child link="arm3_left_link"/>
- 		  <parent link="arm2_left_link"/>
-          <origin rpy="0.0 0.0 -1.570796" xyz="0.0 0.0 0.00"/>
-		  <axis xyz="0 0 1"/>
-		  <limit effort="1.2748" velocity="2.083"/>
-          <joint_properties damping="0.0" friction="0.0"/>  
-	    </joint>
-      
-      
-    
-      
-        <joint name="arm4_left_joint" type="fixed">
- 		  <child link="arm4_left_link"/>
- 		  <parent link="arm3_left_link"/>
-          <origin rpy="0.0 1.570796 1.570796" xyz="0.00 -0.038 -0.018"/>
-		  <axis xyz="0 0 1"/>
-		  <limit effort="1.2748" velocity="2.083"/>
-          <joint_properties damping="0.0" friction="0.0"/>  
-	    </joint>
-      
-      
-    
-      
-        <joint name="arm5_left_joint" type="fixed">
- 		  <child link="arm5_left_link"/>
- 		  <parent link="arm4_left_link"/>
-          <origin rpy="0.0 3.141592 0.0" xyz="0.00 0.00 0.00"/>
-		  <axis xyz="0 0 1"/>
-		  <limit effort="1.2748" velocity="2.083"/>
-          <joint_properties damping="0.0" friction="0.0"/>  
-	    </joint>
-      
-      
-    
-      
-        <joint name="arm6_left_joint" type="fixed">
- 		  <child link="arm6_left_link"/>
- 		  <parent link="arm5_left_link"/>
-          <origin rpy="1.570796 0.0 1.570796" xyz="0.018 0.0 0.038"/>
+ 		  <parent link="arm1_left_link"/>
+          <origin rpy="0.78539816 1.57079586 -0.78539816" xyz="0. -0.0169 -0.022"/>
 		  <axis xyz="0 0 1"/>
 		  <limit effort="1.2748" velocity="2.083"/>
           <joint_properties damping="0.0" friction="0.0"/>  
@@ -1898,8 +799,8 @@
       
         <joint name="arm7_left_joint" type="continuous">
  		  <child link="arm7_left_link"/>
- 		  <parent link="arm6_left_link"/>
-          <origin rpy="0.0 0.0 0.0" xyz="0.0 0.00 0.00"/>
+ 		  <parent link="arm3_left_link"/>
+          <origin rpy="-1.30358979e-06 -3.26794900e-07 3.14159233e+00" xyz="-1.24182117e-08 -7.60000176e-02 -3.71182147e-08"/>
 		  <axis xyz="0 0 1"/>
 		  <limit effort="1.2748" velocity="2.083"/>
           <joint_properties damping="0.0" friction="0.0"/>  
@@ -1919,57 +820,15 @@
       
       
     
-      
-        <joint name="cam0_left_joint" type="fixed">
- 		  <child link="cam0_left_link"/>
- 		  <parent link="arm8_left_link"/>
-          <origin rpy="1.570796 0.0 0.0" xyz="0.0 0.01 0.0"/>
-		  <axis xyz="0 0 1"/>
-		  <limit effort="1.2748" velocity="2.083"/>
-          <joint_properties damping="0.0" friction="0.0"/>  
-	    </joint>
-      
-      
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-      
-        <joint name="arm0_right_joint" type="fixed">
- 		  <child link="arm0_right_link"/>
- 		  <parent link="chassis_center_link"/>
-          <origin rpy="0.0 3.141592 0.0" xyz="-0.001 0.102 -0.0682"/>
-		  <axis xyz="0 0 1"/>
-		  <limit effort="1.2748" velocity="2.083"/>
-          <joint_properties damping="0.0" friction="0.0"/>  
-	    </joint>
-      
-      
     
       
         <joint name="arm1_right_joint" type="continuous">
  		  <child link="arm1_right_link"/>
- 		  <parent link="arm0_right_link"/>
-          <origin rpy="3.141592 0.0 1.570796" xyz="0.0 0.0 0.009"/>
-		  <axis xyz="0 0 1"/>
-		  <limit effort="1.2748" velocity="2.083"/>
-          <joint_properties damping="0.0" friction="0.0"/>  
-	    </joint>
-      
-      
-    
-      
-        <joint name="arm2_right_joint" type="fixed">
- 		  <child link="arm2_right_link"/>
- 		  <parent link="arm1_right_link"/>
-          <origin rpy="1.570796 0.0 0.0" xyz="0.0 -0.0169 -0.022"/>
+ 		  <parent link="chassis_center_link"/>
+          <origin rpy="-1.30717959e-06 2.13589809e-13 1.57079665e+00" xyz="-9.99994118e-04 1.02000000e-01 -7.72000000e-02"/>
 		  <axis xyz="0 0 1"/>
 		  <limit effort="1.2748" velocity="2.083"/>
           <joint_properties damping="0.0" friction="0.0"/>  
@@ -1980,44 +839,8 @@
       
         <joint name="arm3_right_joint" type="continuous">
  		  <child link="arm3_right_link"/>
- 		  <parent link="arm2_right_link"/>
-          <origin rpy="0.0 0.0 -1.570796" xyz="0.0 0.0 0.00"/>
-		  <axis xyz="0 0 1"/>
-		  <limit effort="1.2748" velocity="2.083"/>
-          <joint_properties damping="0.0" friction="0.0"/>  
-	    </joint>
-      
-      
-    
-      
-        <joint name="arm4_right_joint" type="fixed">
- 		  <child link="arm4_right_link"/>
- 		  <parent link="arm3_right_link"/>
-          <origin rpy="0.0 1.570796 1.570796" xyz="0.00 -0.038 -0.018"/>
-		  <axis xyz="0 0 1"/>
-		  <limit effort="1.2748" velocity="2.083"/>
-          <joint_properties damping="0.0" friction="0.0"/>  
-	    </joint>
-      
-      
-    
-      
-        <joint name="arm5_right_joint" type="fixed">
- 		  <child link="arm5_right_link"/>
- 		  <parent link="arm4_right_link"/>
-          <origin rpy="0.0 3.141592 0.0" xyz="0.00 0.00 0.00"/>
-		  <axis xyz="0 0 1"/>
-		  <limit effort="1.2748" velocity="2.083"/>
-          <joint_properties damping="0.0" friction="0.0"/>  
-	    </joint>
-      
-      
-    
-      
-        <joint name="arm6_right_joint" type="fixed">
- 		  <child link="arm6_right_link"/>
- 		  <parent link="arm5_right_link"/>
-          <origin rpy="1.570796 0.0 1.570796" xyz="0.018 0.0 0.038"/>
+ 		  <parent link="arm1_right_link"/>
+          <origin rpy="0.78539816 1.57079586 -0.78539816" xyz="0. -0.0169 -0.022"/>
 		  <axis xyz="0 0 1"/>
 		  <limit effort="1.2748" velocity="2.083"/>
           <joint_properties damping="0.0" friction="0.0"/>  
@@ -2028,8 +851,8 @@
       
         <joint name="arm7_right_joint" type="continuous">
  		  <child link="arm7_right_link"/>
- 		  <parent link="arm6_right_link"/>
-          <origin rpy="0.0 0.0 0.0" xyz="0.0 0.00 0.00"/>
+ 		  <parent link="arm3_right_link"/>
+          <origin rpy="-1.30358979e-06 -3.26794900e-07 3.14159233e+00" xyz="-1.24182117e-08 -7.60000176e-02 -3.71182147e-08"/>
 		  <axis xyz="0 0 1"/>
 		  <limit effort="1.2748" velocity="2.083"/>
           <joint_properties damping="0.0" friction="0.0"/>  
@@ -2049,11 +872,15 @@
       
       
     
+    
+    
+    
+    
       
-        <joint name="cam0_right_joint" type="fixed">
- 		  <child link="cam0_right_link"/>
- 		  <parent link="arm8_right_link"/>
-          <origin rpy="1.570796 0.0 0.0" xyz="0.0 0.01 0.0"/>
+        <joint name="head2_center_joint" type="continuous">
+ 		  <child link="head2_center_link"/>
+ 		  <parent link="chassis_center_link"/>
+          <origin rpy="2.36165719e+00 -1.57079586e+00 -7.90861513e-01" xyz="-9.99994118e-04 1.06000000e-01 -2.90884593e-09"/>
 		  <axis xyz="0 0 1"/>
 		  <limit effort="1.2748" velocity="2.083"/>
           <joint_properties damping="0.0" friction="0.0"/>  
@@ -2061,13 +888,17 @@
       
       
     
-    
-    
-    
-    
-    
-    
-    
+      
+        <joint name="aiy0_center_joint" type="fixed">
+ 		  <child link="aiy0_center_link"/>
+ 		  <parent link="head2_center_link"/>
+          <origin rpy="1.570796 3.141592 0.0" xyz="0.0 0.00 -0.039"/>
+		  <axis xyz="0 0 1"/>
+		  <limit effort="1.2748" velocity="2.083"/>
+          <joint_properties damping="0.0" friction="0.0"/>  
+	    </joint>
+      
+      
     
     
     
